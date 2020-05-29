@@ -1,26 +1,39 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import { Route, BrowserRouter, Switch } from 'react-router-dom'
+import Navbar from './components/Navbar'
+import Location from './components/Location'
+import Staff from './components/Staff'
+import Services from './components/Services'
+import ServiceExtras from './components/ServiceExtras'
+import DateTime from './components/DateTime'
+import Information from './components/Information'
+import Confirmation from './components/Confirmation'
+
+class App extends React.Component {
+    render() {
+        return (
+            <BrowserRouter>
+                <div className="App">
+                    <Navbar />
+                    <Switch>
+                        <Route exact path="/" component={Location} />
+                        {/* <Route path="/Location" component={Location}/> */}
+                        <Route path="/Staff" component={Staff} />
+                        <Route path="/Services" component={Services} />
+                        <Route path="/ServiceExtras" component={ServiceExtras} />
+                        <Route path="/DateTime" component={DateTime} />
+                        <Route path="/Information" component={Information} />
+                        <Route path="/Confirmation" component={Confirmation} />
+                    </Switch>
+
+                </div>
+            </BrowserRouter>
+        );
+    }
 }
+
+
 
 export default App;
