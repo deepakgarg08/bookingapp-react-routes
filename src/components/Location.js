@@ -1,4 +1,7 @@
 import React from "react";
+//this is home page
+import { Link } from 'react-router-dom'
+import { connect } from 'react-redux'
 
 class Location extends React.Component {
     render() {
@@ -11,4 +14,11 @@ class Location extends React.Component {
     }
 }
 
-export default Location
+const mapStateToProps = (state) => {
+    console.log("check state", state);
+    return {
+        posts: state.posts //doubt is here
+    }
+}
+
+export default connect()(Location)

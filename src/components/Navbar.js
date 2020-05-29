@@ -4,7 +4,7 @@ import { Link, NavLink , withRouter} from 'react-router-dom'
 class Navbar extends React.Component {
         render() {
 
-        // console.log("check props navbar:", this.props)
+        console.log("check props navbar:", this.props)
 
         return (
             <nav className="nav-wrapper red-darken-3">
@@ -22,9 +22,11 @@ class Navbar extends React.Component {
                 </div>
             </nav>
         )
-
     }
 }
 
-export default Navbar
-// export default withRouter(Navbar);
+
+
+// export default Navbar
+//withRouter provides props properties
+export default withRouter(Navbar);
