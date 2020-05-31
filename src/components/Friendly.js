@@ -1,10 +1,14 @@
 import React from "react";
+import { connect } from 'react-redux'
+import { PAGE_STATE } from '../redux/actionTypes'
+
 
 function Friendly(props) {
 
-    const { locationProps } = props
-    console.log('locationProps', locationProps)
-    const individualLocationData = locationProps.map((e) => {
+    const { elementProperty } = props
+    console.log('elementProperty', elementProperty)
+
+    const individualData = elementProperty.map((e) => {
         return (
             <span key={e.id}>
                 <button id="friendly" onClick={handleEvent}>
@@ -18,19 +22,22 @@ function Friendly(props) {
     })
 
     function handleEvent() {
-        console.log(props)
+        console.log('.....prop',props)
+        let newCurrentPageState = 'staff'
+        //also needs to send location clicked
+        props.changecurrentPageState(newCurrentPageState)
     }
 
     return (
         <>
-            {individualLocationData}
+            {individualData}
         </>
     );
 }
 //avatar complex component
 function Avatar(props) {
     return (
-        < img src={props.img} alt="Spider Man" height="400px" id="avatar" />
+        < img src={props.img} alt={props.name} height="400px" id="avatar" />
     );
 }
 
@@ -42,5 +49,17 @@ function UserName(props) {
     );
 }
 
+const mapStateToProps = (state, ownProps) => {
+    return {
+        init: state
+    }
+}
 
-export default Friendly
+const mapDispatchToProps = (dispatch) => {
+    return {
+        changecurrentPageState: (currentPageState) => { dispatch({ type: PAGE_STATE, payload: { currentPageState: currentPageState } }) }
+    }
+
+}
+
+export default connect(mapStateToProps,mapDispatchToProps) (Friendly)

@@ -10,6 +10,7 @@ import ServiceExtras from './components/ServiceExtras'
 import DateTime from './components/DateTime'
 import Information from './components/Information'
 import Confirmation from './components/Confirmation'
+import MainPage from "./components/MainPage";
 
 class App extends React.Component {
     render() {
@@ -18,7 +19,7 @@ class App extends React.Component {
                 <div className="App">
                     <Navbar />
                     <Switch>
-                        <Route exact path="/" component={Location} />
+                        <Route exact path="/" component={MainPage} />
                         {/* <Route path="/Location" component={Location}/> */}
                         <Route path="/Staff" component={Staff} />
                         <Route path="/Services" component={Services} />

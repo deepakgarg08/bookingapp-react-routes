@@ -3,7 +3,7 @@ import Friendly from './Friendly'
 import { Link } from 'react-router-dom'
 import { connect } from 'react-redux'
 import { PAGE_STATE } from '../redux/actionTypes'
-import './MainPage.css'
+// import './MainPage.css'
 
 class Location extends React.Component {
     locationData = {
@@ -33,7 +33,7 @@ class Location extends React.Component {
             // </div>
 
             <div>
-                <span><Friendly locationProps={this.locationData.locationProps} /></span>
+                <span><Friendly elementProperty={this.locationData.locationProps} /></span>
             </div>
 
 

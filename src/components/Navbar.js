@@ -11,6 +11,7 @@ class Navbar extends React.Component {
                     <Link className="brand-logo" to="/"> Booking App</Link>
                     <ul className="right">
                         <li><NavLink exact to="/">Location</NavLink>  </li>
+                        {/*<li><NavLink  to="/location">Location</NavLink>  </li>*/}
                         <li><NavLink  to="/staff">Staff</NavLink>  </li>
                         <li><NavLink to="/services">Services</NavLink>  </li>
                         <li><NavLink to="/serviceextras">ServiceExtras</NavLink>  </li>
