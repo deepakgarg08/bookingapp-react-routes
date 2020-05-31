@@ -1,0 +1,159 @@
+#MainPage {
+    text-align: center;
+    background-color: yellow;
+    justify-content: center;
+}
+
+#h1 {
+    color: red
+}
+
+#Wrapper {
+    text-align: center;
+    background-color: white;
+    display: flex;
+    width: 100%;
+    position: relative;
+    justify-content: center;
+}
+
+#container {
+    min-width: 980px;
+    width: 980px;
+    height: 600px;
+    background-color: turquoise;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+}
+
+#leftsidecontainer {
+    width: 230px;
+    /* height: 100%; */
+    position: relative;
+    background-color: #292d32;
+    text-align: center;
+}
+
+#leftcontainerdata {
+    padding: 30px;
+    /* height: 100%; */
+}
+
+#rightsidecontainer {
+    width: calc(100% -230px);
+    /* height: 100%; */
+    position: relative;
+    background-color: #E4EBF3;
+    /* position: relative; */
+    float: right;
+    text-align: center;
+}
+
+#rightcontainerdata {
+    padding: 30px;
+    /* height: 100%; */
+}
+
+.circleonclick {
+    height: 24px;
+    width: 24px;
+    display: table-cell;
+    vertical-align: middle;
+    border-radius: 50%;
+    /* may require vendor prefixes */
+    background: #4FBF65;
+    margin: 0px 7px 0px 0px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.circlebeforeclick {
+    height: 24px;
+    width: 24px;
+    display: table-cell;
+    vertical-align: middle;
+    border-radius: 50%;
+    /* may require vendor prefixes */
+    background: #626c76;
+    margin: 0px 7px 0px 0px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.circleafterclick {
+    height: 24px;
+    width: 24px;
+    display: table-cell;
+    vertical-align: middle;
+    border-radius: 50%;
+    /* may require vendor prefixes */
+    background: #6c70dc;
+    margin: 0px 7px 0px 0px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.nameproperty {
+    display: inline-flex;
+    width: 170px;
+    height: 24px;
+    margin: 0px 0px 30px;
+    color: #FFFFFF
+}
+
+.headings {
+    color: #4FBF65;
+}
+
+#friendly {
+    display: inline-block;
+    margin: 8px;
+    height: 200px;
+    width: 210px;
+    padding: 0px;
+    background: #FFF;
+    box-shadow: 0px 0px 5px #555;
+    filter: drop-shadow(0px 0px 5px #555);
+    -webkit-filter: drop-shadow(0px 0px 5px #555);
+    filter: drop-shadow(0px 0px 5px #555);
+    border-radius : 20px;
+    
+}
+
+a#friendly {
+    color: inherit;
+    text-decoration: none;
+    
+}
+
+button#friendly:hover {
+    color: green;
+}
+
+#username {
+    font-size: 24px;
+    font-family: "Arial, Helvetica,sans-serif";
+    margin: 20px;
+    text-align: "center";
+}
+
+#avatar {
+    margin-top: 20px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%
+}
+
+#contactdetails {
+    font-size: small;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#cardprops {
+    padding: 10px;
+}
+/* 
+#cardprops :hover {
+    color: yellow;
+} */
