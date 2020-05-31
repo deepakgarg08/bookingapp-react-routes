@@ -2,12 +2,13 @@ import React from "react";
 //this is home page
 import { Link } from 'react-router-dom'
 import { connect } from 'react-redux'
-import {PAGE_STATE } from '../redux/actionTypes'
+import { PAGE_STATE } from '../redux/actionTypes'
 
 class Location extends React.Component {
 
-    handleClick = ()=>{
+    handleClick = () => {
         let newCurrentPageState = 'staff'
+        //also needs to send location clicked
         this.props.changecurrentPageState(newCurrentPageState)
     }
 
@@ -30,10 +31,10 @@ const mapStateToProps = (state, ownProps) => {
 
 const mapDispatchToProps = (dispatch) => {
     return {
-        changecurrentPageState : (currentPageState) => { dispatch ({type: 'PAGE_STATE', currentPageState:currentPageState})}
+        changecurrentPageState: (currentPageState) => { dispatch({ type: PAGE_STATE, payload: { currentPageState: currentPageState } }) }
         // changecurrentPageState: () => dispatch({ type: 'RESET' })
     }
-  
+
 }
 
-export default connect(mapStateToProps,mapDispatchToProps)(Location)
+export default connect(mapStateToProps, mapDispatchToProps)(Location)
