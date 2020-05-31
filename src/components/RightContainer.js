@@ -9,9 +9,8 @@ class RightContainerComponent extends React.Component {
 
 
     render() {
-        console.log("rightcontainercomponenet this.props", this.props.init.currentPageState)
         let CurrentPageState =  this.props.init.currentPageState
-        console.log('CurrentPageState', CurrentPageState)
+        // console.log('CurrentPageState', CurrentPageState)
 
         switch(CurrentPageState){
             case 'location':{

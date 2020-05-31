@@ -1,9 +1,5 @@
 import React from "react";
 import Friendly from './Friendly'
-import { Link } from 'react-router-dom'
-import { connect } from 'react-redux'
-import { PAGE_STATE } from '../redux/actionTypes'
-// import './MainPage.css'
 
 class Location extends React.Component {
     locationData = {
@@ -16,21 +12,9 @@ class Location extends React.Component {
             { name: "Add new City", img: "image6.jpg", id: 6 }
         ]
     }
-    handleClick = () => {
-        let newCurrentPageState = 'staff'
-        //also needs to send location clicked
-        this.props.changecurrentPageState(newCurrentPageState)
-    }
 
     render() {
         return (
-            // <div className="">
-            //     {/* <h4 className="center">Location</h4> */}
-            //     <span><Friendly locationProps={this.locationData.locationProps} /></span>
-            //     {/* <button className="center btn red" onClick={this.handleClick}>change State</button> */}
-
-            //     {/* <p>  Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.m</p> */}
-            // </div>
 
             <div>
                 <span><Friendly elementProperty={this.locationData.locationProps} /></span>
@@ -41,17 +25,4 @@ class Location extends React.Component {
     }
 }
 
-const mapStateToProps = (state, ownProps) => {
-    return {
-        init: state
-    }
-}
-
-const mapDispatchToProps = (dispatch) => {
-    return {
-        changecurrentPageState: (currentPageState) => { dispatch({ type: PAGE_STATE, payload: { currentPageState: currentPageState } }) }
-    }
-
-}
-
-export default connect(mapStateToProps, mapDispatchToProps)(Location)
+export default Location

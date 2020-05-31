@@ -1,17 +1,16 @@
 import React from "react";
 import { connect } from 'react-redux'
-import { PAGE_STATE } from '../redux/actionTypes'
+import * as actions from '../redux/actionTypes'
 
 
 function Friendly(props) {
 
     const { elementProperty } = props
-    console.log('elementProperty', elementProperty)
 
     const individualData = elementProperty.map((e) => {
         return (
             <span key={e.id}>
-                <button id="friendly" onClick={handleEvent}>
+                <button id="friendly" onClick={(event) => handleEvent(e.name)}>
                     <div id="cardprops">
                         <Avatar img={e.img} />
                         <UserName name={e.name} />
@@ -21,11 +20,19 @@ function Friendly(props) {
         )
     })
 
-    function handleEvent() {
-        console.log('.....prop',props)
-        let newCurrentPageState = 'staff'
-        //also needs to send location clicked
-        props.changecurrentPageState(newCurrentPageState)
+    function handleEvent(name) {
+        let newCurrentPageState = props.init.currentPageState
+
+        if (newCurrentPageState === 'location') {
+            props.changecurrentPageState('staff')
+            props.newLocationValue(name)
+
+        }
+        else if (newCurrentPageState === 'staff') {
+            props.changecurrentPageState('staff') //this will be changed later on to services
+            props.newstaffValue(name)
+        }
+
     }
 
     return (
@@ -49,17 +56,24 @@ function UserName(props) {
     );
 }
 
+//redux mappings
 const mapStateToProps = (state, ownProps) => {
     return {
         init: state
     }
 }
 
-const mapDispatchToProps = (dispatch) => {
+const mapDispatchToPropsLocation = (dispatch, ownProps) => {
+
     return {
-        changecurrentPageState: (currentPageState) => { dispatch({ type: PAGE_STATE, payload: { currentPageState: currentPageState } }) }
+
+        changecurrentPageState: (currentPageState) => { dispatch({ type: actions.PAGE_STATE, payload: { currentPageState: currentPageState } }) },
+        newLocationValue: (location) => { dispatch({ type: actions.LOCATION, payload: { location: location } }) },
+        newstaffValue: (staff) => { dispatch({ type: actions.STAFF, payload: { staff: staff } }) }
+
     }
 
 }
 
-export default connect(mapStateToProps,mapDispatchToProps) (Friendly)
+
+export default connect(mapStateToProps, mapDispatchToPropsLocation)(Friendly)

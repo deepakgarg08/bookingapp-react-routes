@@ -14,10 +14,9 @@ let initState = {
 
 
 function reducer(state = initState, action) {
-    console.log('action in rootreducer', action)
+    // console.log('action in rootreducer', action)
     console.log('state in rootreducer', state)
 
-    // return state;    
 
     switch (action.type) {
 
@@ -25,7 +24,7 @@ function reducer(state = initState, action) {
         case actionTypes.LOCATION:
             return {
                 ...state,
-                location: action.payload.cityName //[...state.location, action.payload.cityName]
+                location: action.payload.location //[...state.location, action.payload.cityName]
             }
         case actionTypes.STAFF:
             return {
@@ -97,8 +96,6 @@ function reducer(state = initState, action) {
             return state
 
     }
-
-
 
 }
 

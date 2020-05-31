@@ -1,11 +1,5 @@
 import React from "react";
 import Friendly from './Friendly'
-import { Link } from 'react-router-dom'
-import { connect } from 'react-redux'
-import { PAGE_STATE } from '../redux/actionTypes'
-// import './MainPage.css'
-
-
 
 class Staff extends React.Component {
 
@@ -21,11 +15,6 @@ class Staff extends React.Component {
 
         ]
     }
-    handleClick = () => { 
-        let newCurrentPageState = 'staff'
-        //also needs to send staff clicked
-        this.props.changecurrentPageState(newCurrentPageState)
-    }
 
     render() {
         return (
@@ -38,17 +27,4 @@ class Staff extends React.Component {
     }
 }
 
-const mapStateToProps = (state, ownProps) => {
-    return {
-        init: state
-    }
-}
-
-const mapDispatchToProps = (dispatch) => {
-    return {
-        changecurrentPageState: (currentPageState) => { dispatch({ type: PAGE_STATE, payload: { currentPageState: currentPageState } }) }
-    }
-
-}
-
-export default connect(mapStateToProps, mapDispatchToProps)(Staff)
+export default Staff
