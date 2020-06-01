@@ -1,6 +1,7 @@
 import React from "react";
 import { connect } from 'react-redux'
 import * as actions from '../redux/actionTypes'
+import { Redirect } from "react-router-dom";
 
 
 function Friendly(props) {
@@ -21,7 +22,8 @@ function Friendly(props) {
     })
 
     function handleEvent(name) {
-        let newCurrentPageState = props.init.currentPageState
+        let newCurrentPageState = props.init.currentPageState //location
+
 
         if (newCurrentPageState === 'location') {
             props.changecurrentPageState('staff')
@@ -32,6 +34,15 @@ function Friendly(props) {
             props.changecurrentPageState('staff') //this will be changed later on to services
             props.newstaffValue(name)
         }
+
+        
+            // <Redirect
+            //   to={{
+            //     pathname: "/signin",
+            //     state: { from: props.location },
+            //   }}
+            // />
+          
 
     }
 

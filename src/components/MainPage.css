@@ -102,10 +102,12 @@
     color: #FFFFFF
 }
 
-.headings {
+.selected {
     color: #4FBF65;
 }
-
+.non-selected{
+    color: #FFFFFF;
+}
 #friendly {
     display: inline-block;
     margin: 8px;

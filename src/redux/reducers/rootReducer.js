@@ -9,7 +9,7 @@ let initState = {
     dateAndTime: "",
     information: "",
     confirmation: "",
-    currentPageState: "location" //all in lowercase
+    currentPageState: "location" //all in lowercase,
 }
 
 
