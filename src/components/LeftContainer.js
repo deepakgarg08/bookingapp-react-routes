@@ -43,7 +43,6 @@ const returnState = (stateName) => {
 
 function LeftContainerComponent(props) {
     // TODO: put current state from hook in the 
-    console.log("check props leftcontainer",props.init.currentPageState)
     let currentpagestate = props.init.currentPageState
     const currentState = returnState(currentpagestate);
     return (

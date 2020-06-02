@@ -15,7 +15,7 @@ let initState = {
 
 function reducer(state = initState, action) {
     // console.log('action in rootreducer', action)
-    console.log('state in rootreducer', state)
+    // console.log('state in rootreducer', state)
 
 
     switch (action.type) {
