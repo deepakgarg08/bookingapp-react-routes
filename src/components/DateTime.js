@@ -10,10 +10,12 @@ function DateTime(props) {
 
     let newCurrentPageState = props.init.currentPageState //dateAndTime
 
-    let handleSubmit = () => {
+    let handleSubmit = (e) => {
+        e.preventDefault()
+
         if (newCurrentPageState === "dateAndTime") {
             props.changecurrentPageState('information')
-            props.selectDateAndTime(` ${date} + booking time: ${time}`)
+            props.selectDateAndTime(` ${date} & booking time: ${time}`)
 
         }
     }

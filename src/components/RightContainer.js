@@ -8,6 +8,8 @@ import { connect } from 'react-redux'
 import { PAGE_STATE } from '../redux/actionTypes'
 import ServiceExtras from "./ServiceExtras";
 import DateTime from "./DateTime";
+import Information from './Information'
+import Confirmation from './Confirmation'
 
 class RightContainerComponent extends React.Component {
 
@@ -60,6 +62,26 @@ class RightContainerComponent extends React.Component {
 
                 );
             }
+
+            case 'information': {
+                return (
+                    <div id= "information_div">
+                        <Information/>
+                    </div>
+
+                );
+            }
+
+            case 'confirmation': {
+                return (
+                    <div>
+                        <Confirmation/>
+                    </div>
+
+                );
+            }
+
+
             default:
                 console.log('hello default',CurrentPageState)
                 return

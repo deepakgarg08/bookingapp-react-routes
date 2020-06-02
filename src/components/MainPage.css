@@ -36,7 +36,7 @@
 }
 
 #leftcontainerdata {
-    padding: 30px;
+    padding: 50px;
     /* height: 100%; */
 }
 
@@ -56,8 +56,8 @@
 }
 
 .circleonclick {
-    height: 24px;
-    width: 24px;
+    height: 27px;
+    width: 27px;
     display: table-cell;
     vertical-align: middle;
     border-radius: 50%;
@@ -69,8 +69,8 @@
 }
 
 .circlebeforeclick {
-    height: 24px;
-    width: 24px;
+    height: 27px;
+    width: 27px;
     display: table-cell;
     vertical-align: middle;
     border-radius: 50%;
@@ -82,8 +82,8 @@
 }
 
 .circleafterclick {
-    height: 24px;
-    width: 24px;
+    height: 27px;
+    width: 27px;
     display: table-cell;
     vertical-align: middle;
     border-radius: 50%;
@@ -172,4 +172,28 @@ button#friendly:hover {
 #text{
     text-align: left;
 
+}
+
+#bootstrapForm{
+    width: 750px;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+  }
+
+  input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#information_div{
+    width: 690px;
+}
+
+
+
+#h3_{
+    color: green;
 }

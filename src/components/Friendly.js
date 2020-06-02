@@ -21,6 +21,7 @@ function Friendly(props) {
     })
 
     function handleEvent(name) {
+
         let newCurrentPageState = props.init.currentPageState //location
 
 
