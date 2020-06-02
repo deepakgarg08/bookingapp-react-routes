@@ -197,3 +197,95 @@ input::-webkit-inner-spin-button {
 #h3_{
     color: green;
 }
+
+#friendly1{
+    display: inline-block;
+    margin: 0px 0px 15px;
+    height: 76px;
+    width: 690px;
+    /* padding: 0px; */
+    background: #FFF;
+    box-shadow: 0px 0px 5px #555;
+    filter: drop-shadow(0px 0px 5px #555);
+    -webkit-filter: drop-shadow(0px 0px 5px #555);
+    filter: drop-shadow(0px 0px 5px #555);
+    border-radius: 2px;
+    padding: 13px 20px;
+}
+
+
+#friendly2 {
+    display: inline-block;
+    margin: 8px;
+    height: 309px;
+    width: 370px;
+    padding: 0px;
+    background: #FFF;
+    box-shadow: 0px 0px 5px #555;
+    filter: drop-shadow(0px 0px 5px #555);
+    -webkit-filter: drop-shadow(0px 0px 5px #555);
+    filter: drop-shadow(0px 0px 5px #555);
+    border-radius: 2px;
+    padding: 13px 20px;
+    position: absolute;
+    left: 3%;
+
+}
+
+
+#friendly3 {
+    display: inline-block;
+    margin: 8px;
+    height: 309px;
+    width: 305px;
+    padding: 0px;
+    background: #FFF;
+    box-shadow: 0px 0px 5px #555;
+    filter: drop-shadow(0px 0px 5px #555);
+    -webkit-filter: drop-shadow(0px 0px 5px #555);
+    filter: drop-shadow(0px 0px 5px #555);
+    border-radius: 2px;
+    padding: 13px 20px;
+    position: absolute;
+
+    right: 3%;
+
+}
+
+#friendly4{
+    display: inline-block;
+    margin: 0px 0px 15px;
+    height: 76px;
+    width: 690px;
+    /* padding: 0px; */
+    background: #FFF;
+    box-shadow: 0px 0px 5px #555;
+    filter: drop-shadow(0px 0px 5px #555);
+    -webkit-filter: drop-shadow(0px 0px 5px #555);
+    filter: drop-shadow(0px 0px 5px #555);
+    border-radius: 2px;
+    padding: 13px 20px;
+    margin-top: 49%;
+}
+#outerdiv{
+    display: block;
+    height: 405px;
+    width: 690px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

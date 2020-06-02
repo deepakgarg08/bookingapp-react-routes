@@ -35,7 +35,6 @@ function Friendly(props) {
         let newCurrentPageState = props.init.currentPageState //location
         console.log('props in friendly', props)
 
-
         if (newCurrentPageState === 'location') {
             props.changecurrentPageState('staff')
             props.newLocationValue(name)
@@ -45,8 +44,6 @@ function Friendly(props) {
             props.changecurrentPageState('services') //this will be changed later on to services
             props.newstaffValue(name)
         }
-
-
         else if (newCurrentPageState === 'services') {
             props.changecurrentPageState('extraService') //this will be changed later on to services
             props.newservicesValue({ name, price })
@@ -87,7 +84,6 @@ const mapStateToProps = (state, ownProps) => {
 const mapDispatchToPropsLocation = (dispatch, ownProps) => {
 
     return {
-
         changecurrentPageState: (currentPageState) => { dispatch({ type: actions.PAGE_STATE, payload: { currentPageState: currentPageState } }) },
         newLocationValue: (location) => { dispatch({ type: actions.LOCATION, payload: { location: location } }) },
         newstaffValue: (staff) => { dispatch({ type: actions.STAFF, payload: { staff: staff } }) },

@@ -15,7 +15,7 @@ function DateTime(props) {
 
         if (newCurrentPageState === "dateAndTime") {
             props.changecurrentPageState('information')
-            props.selectDateAndTime(` ${date} & booking time: ${time}`)
+            props.selectDateAndTime({date, time})
 
         }
     }
