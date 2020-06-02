@@ -5,12 +5,12 @@ class ServiceExtras extends React.Component {
     serviceData = {
         serviceProps: [
 
-            { name: "Membrane", img: "water1.jpg", info: "aquaguards", id: 1 },
-            { name: "Pipe", img: "geyser.jpg", info: "yoyo", id: 2 },
-            { name: "Chimney", img: "water1.jpg", info: "ohh yeah", id: 3 },
-            { name: "Gas know", img: "water1.jpg", info: "ohh yeah", id: 4 },
-            { name: "Led bulb (RO)", img: "water1.jpg", info: "ohh yeah", id: 5 },
-            { name: "Concealed", img: "geyser.jpg", info: "great", id: 6 },
+            { name: "Membrane", img: "water1.jpg", price: "100", id: 1 },
+            { name: "Pipe", img: "geyser.jpg", price: "200", id: 2 },
+            { name: "Chimney", img: "water1.jpg", price: "500", id: 3 },
+            { name: "Gas know", img: "water1.jpg", price: "100", id: 4 },
+            { name: "Led bulb (RO)", img: "water1.jpg", price: "100", id: 5 },
+            { name: "Concealed", img: "geyser.jpg", price: "400", id: 6 },
 
         ]
     }

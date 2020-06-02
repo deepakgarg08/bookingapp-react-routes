@@ -27,7 +27,6 @@ function DateTime(props) {
                 <DatePicker className="datepickr"
                     onChange={onChangeDate}
                     value={date}
-                    dayPlaceholder='dd'
                 />
                 <br />
                 <br />

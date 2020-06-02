@@ -5,12 +5,12 @@ class Services extends React.Component {
     serviceData = {
         serviceProps: [
 
-            { name: "Eureka Forbes", img: "water1.jpg" , info: "aquaguards" , id : 1},
-            { name: "Aquaguard", img: "geyser.jpg",  info: "yoyo", id : 2 },
-            { name: "Reverse Osmosis (RO)", img: "water1.jpg" , info: "ohh yeah" , id : 3},
-            { name: "Kent (RO)", img: "water1.jpg" , info: "ohh yeah" , id : 4},
-            { name: "Aquasure (RO)", img: "water1.jpg" , info: "ohh yeah" , id : 5},
-            { name: "water Geyser", img: "geyser.jpg" , info: "great" , id :6 },
+            { name: "Eureka Forbes", img: "water1.jpg", price: "100", id: 1 },
+            { name: "Aquaguard", img: "geyser.jpg", price: "500", id: 2 },
+            { name: "Reve Osmosis (RO)", img: "water1.jpg", price: "1000", id: 3 },
+            { name: "Kent (RO)", img: "water1.jpg", price: "2000", id: 4 },
+            { name: "Aquasure (RO)", img: "water1.jpg", price: "500", id: 5 },
+            { name: "water Geyser", img: "geyser.jpg", price: "5000", id: 6 },
 
         ]
     }

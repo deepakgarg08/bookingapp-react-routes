@@ -134,7 +134,7 @@ button#friendly:hover {
 }
 
 #username {
-    font-size: 24px;
+    font-size: 15px;
     font-family: "Arial, Helvetica,sans-serif";
     margin: 20px;
     text-align: "center";
@@ -188,7 +188,7 @@ input::-webkit-inner-spin-button {
   margin: 0;
 }
 
-#information_div{
+#resize_div{
     width: 690px;
 }
 

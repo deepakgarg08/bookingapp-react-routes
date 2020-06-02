@@ -65,7 +65,7 @@ class RightContainerComponent extends React.Component {
 
             case 'information': {
                 return (
-                    <div id= "information_div">
+                    <div id= "resize_div">
                         <Information/>
                     </div>
 
@@ -74,7 +74,7 @@ class RightContainerComponent extends React.Component {
 
             case 'confirmation': {
                 return (
-                    <div>
+                    <div id= "resize_div">
                         <Confirmation/>
                     </div>
 
