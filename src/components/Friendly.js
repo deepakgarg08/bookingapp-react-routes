@@ -1,7 +1,6 @@
 import React from "react";
 import { connect } from 'react-redux'
 import * as actions from '../redux/actionTypes'
-import { Redirect } from "react-router-dom";
 
 
 function Friendly(props) {
@@ -31,18 +30,20 @@ function Friendly(props) {
 
         }
         else if (newCurrentPageState === 'staff') {
-            props.changecurrentPageState('staff') //this will be changed later on to services
+            props.changecurrentPageState('services') //this will be changed later on to services
             props.newstaffValue(name)
         }
 
-        
-            // <Redirect
-            //   to={{
-            //     pathname: "/signin",
-            //     state: { from: props.location },
-            //   }}
-            // />
-          
+        else if (newCurrentPageState === 'services') {
+            props.changecurrentPageState('extraService') //this will be changed later on to services
+            props.newservicesValue(name)
+        }
+        else if (newCurrentPageState === 'extraService') {
+            props.changecurrentPageState('dateAndTime') //this will be changed later on to services
+            props.extraService(name)
+        }else{
+            console.log(' i m fired in frinedly compon...not a good news',name)
+        }         
 
     }
 
@@ -80,7 +81,10 @@ const mapDispatchToPropsLocation = (dispatch, ownProps) => {
 
         changecurrentPageState: (currentPageState) => { dispatch({ type: actions.PAGE_STATE, payload: { currentPageState: currentPageState } }) },
         newLocationValue: (location) => { dispatch({ type: actions.LOCATION, payload: { location: location } }) },
-        newstaffValue: (staff) => { dispatch({ type: actions.STAFF, payload: { staff: staff } }) }
+        newstaffValue: (staff) => { dispatch({ type: actions.STAFF, payload: { staff: staff } }) },
+        newservicesValue: (services) => { dispatch({ type: actions.SERVICES, payload: { services: services } }) },
+        extraService: (extraService) => { dispatch({ type: actions.EXTRA_SERVICES , payload: { extraService: extraService } }) },
+
 
     }
 

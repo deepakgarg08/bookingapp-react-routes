@@ -1,37 +1,70 @@
 import React from "react";
 import Location from './Location'
 import Staff from './Staff'
+import Services from './Services'
+
 
 import { connect } from 'react-redux'
 import { PAGE_STATE } from '../redux/actionTypes'
+import ServiceExtras from "./ServiceExtras";
+import DateTime from "./DateTime";
 
 class RightContainerComponent extends React.Component {
 
 
     render() {
-        let CurrentPageState =  this.props.init.currentPageState
-        
-        // console.log('CurrentPageState', CurrentPageState)
+        let CurrentPageState = this.props.init.currentPageState
 
-        switch(CurrentPageState){
-            case 'location':{
+        console.log('CurrentPageState', CurrentPageState)
+
+        switch (CurrentPageState) {
+            case 'location': {
                 return (
                     <div>
-                        <Location/>
+                        <Location />
                     </div>
-    
+
                 );
             }
-            case 'staff':{
+            case 'staff': {
                 return (
                     <div>
-                        <Staff/>
+                        <Staff />
                     </div>
-    
+
                 );
             }
-             default:
-                 console.log('hello default')
+
+            case 'services': {
+                return (
+                    <div>
+                        <Services />
+                    </div>
+
+                );
+            }
+
+            case 'extraService': {
+                return (
+                    <div>
+                        <ServiceExtras />
+                    </div>
+
+                );
+            }
+            case 'dateAndTime': {
+                return (
+                    <div>
+                        <DateTime />
+                    </div>
+
+                );
+            }
+            default:
+                console.log('hello default',CurrentPageState)
+                return
+
+
                 break
         }
 
