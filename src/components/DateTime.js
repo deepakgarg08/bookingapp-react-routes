@@ -5,7 +5,8 @@ import DatePicker from 'react-date-picker'
 import TimePicker from 'react-time-picker';
 
 function DateTime(props) {
-    const [date, onChangeDate] = useState(new Date());
+     
+    const [date, onChangeDate] = useState(new Date().toGMTString())
     const [time, onChangeTime] = useState('10:00');
 
     let newCurrentPageState = props.init.currentPageState //dateAndTime
@@ -16,7 +17,7 @@ function DateTime(props) {
         if (newCurrentPageState === "dateAndTime") {
             props.changecurrentPageState('information')
             props.selectDateAndTime({date, time})
-
+        
         }
     }
 

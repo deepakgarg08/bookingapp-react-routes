@@ -4,25 +4,26 @@ import * as actions from '../redux/actionTypes'
 
 class Confirmation extends React.Component {
 
-
     render() {
-        console.log("check props in confirmaiton:", this.props)
+
+
+
 
         return (
             <div id="veryouter">
                 <div id="outerdiv">
                     <div id="innerdivconfirmaiton">
                         <div id="friendlyprops">
-                            <Friendly flag='a' id="friendly1" />
+                            <Friendly flag={this.props.init} id="friendly1" />
                         </div>
                         <div>
-                            <Friendly flag='b' id="friendly2" />
+                            <Friendly flag={this.props.init} id="friendly2" />
                         </div>
                         <div>
-                            <Friendly flag='c' id="friendly3" />
+                            <Friendly flag={this.props.init} id="friendly3" />
                         </div>
                         <div id="friendlyprops">
-                            <Friendly flag='d' id="friendly4" />
+                            <Friendly flag={this.props.init} id="friendly4" />
                         </div>
                     </div>
                 </div>
@@ -40,33 +41,31 @@ class Confirmation extends React.Component {
 
 function Friendly(props) {
 
-    const { elementProperty } = props
-    console.log('props', props)
+    console.log('props.............', props.flag.dateAndTime.date)
 
 
     let handleEvent = (props) => {
-        console.log(".................", props)
     }
-    let flag = props.flag
-    console.log('flag', flag)
-
-
-
 
     return (
-        <>
+
+        <div>
             <span>
                 <button id={props.id} onClick={handleEvent}>
                     <div>
-                        {console.log('a')}
-                        <span style={{ float: "right", color: "green" }}>Staff</span>
-                        <span>  .................................  </span>
-                        <span style={{ float: "left" }}>Date & TIme</span><span> ...........................</span>
-                        <span >Location   </span><span></span>
+                        <div style={{ float: "right"}}>
+                            <span style={{ color: "#6C70DC", fontFamily : 'Poppins' }}>Location: <span> </span></span>
+                            <span>  {props.flag.location} </span>
+                        </div>
+                        <div style={{ float: "left"}}>
+                            <span style={{ color: "#6C70DC" , fontFamily : 'Poppins'}}>Date & TIme: <span> </span></span>
+                            <span>  {props.flag.dateAndTime.date} </span>
+                        </div>
+                       
                     </div>
                 </button>
             </span>
-        </>
+        </div>
     );
 
 
