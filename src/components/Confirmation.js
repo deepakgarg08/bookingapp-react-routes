@@ -13,16 +13,16 @@ class Confirmation extends React.Component {
                 <div id="outerdiv">
                     <div id="innerdivconfirmaiton">
                         <div id="friendlyprops">
-                            <Friendly flag='a' />
+                            <Friendly flag='a' id="friendly1" />
                         </div>
                         <div>
-                            <Friendly flag='b' />
+                            <Friendly flag='b' id="friendly2" />
                         </div>
                         <div>
-                            <Friendly flag='c' />
+                            <Friendly flag='c' id="friendly3" />
                         </div>
                         <div id="friendlyprops">
-                            <Friendly flag='d' />
+                            <Friendly flag='d' id="friendly4" />
                         </div>
                     </div>
                 </div>
@@ -50,76 +50,26 @@ function Friendly(props) {
     let flag = props.flag
     console.log('flag', flag)
 
-    switch (flag) {
-        case 'a': {
-            return (
-                <>
-                    <span>
-                        <button id="friendly1" onClick={handleEvent}>
-                            <div>
-                                {console.log('a')}
-                                {/* <Avatar img={e.img} /> */}
-                                {/* <UserName name={e.name} /> */}
-                                {/* {e.price ? <span>{e.price} Rs   </span> : null} */}
-                            </div>
-                        </button>
-                    </span>
-                </>
-            );
-        }
 
-        case 'b': {
-            return (
-                <>
-                    <span>
-                        <button id="friendly2" onClick={handleEvent}>
-                            <div>
-                                {console.log('b')}
-                            </div>
-                        </button>
-                    </span>
-                </>
-            );
-        }
-        case 'c': {
-            let style = {
-                height: "20"
-            }
-            return (
-                <>
+
+
+    return (
+        <>
+            <span>
+                <button id={props.id} onClick={handleEvent}>
                     <div>
-                        <button id="friendly3" onClick={handleEvent} style={style}>
-                            <div>
-                                {console.log('c')}
-                            </div>
-                        </button>
+                        {console.log('a')}
+                        <span style={{ float: "right", color: "green" }}>Staff</span>
+                        <span>  .................................  </span>
+                        <span style={{ float: "left" }}>Date & TIme</span><span> ...........................</span>
+                        <span >Location   </span><span></span>
                     </div>
-                </>
-            );
+                </button>
+            </span>
+        </>
+    );
 
 
-        }
-
-        case 'd': {
-            return (
-                <>
-                    <span>
-                        <button id="friendly4" onClick={handleEvent}>
-                            <div>
-                                {console.log('a')}
-                                {/* <Avatar img={e.img} /> */}
-                                {/* <UserName name={e.name} /> */}
-                                {/* {e.price ? <span>{e.price} Rs   </span> : null} */}
-                            </div>
-                        </button>
-                    </span>
-                </>
-            );
-        }
-        default:
-            console.log('check flag in default', flag)
-
-    }
 
     //avatar complex component
     function Avatar(props) {
