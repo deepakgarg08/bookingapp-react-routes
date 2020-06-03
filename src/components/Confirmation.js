@@ -55,8 +55,18 @@ function Friendly(props) {
             return (
                 <div id={props.id} >
                     <div>
-                        <span style={{ float: "left", color: "#E09B22" }}>hello i am product </span>
-                        <span style={{ float: "right", color: "#E09B22" }}>1000 Rs </span><br />
+                        <span style={{ float: "left", color: "#E09B22" }}>{props.flag.services.name} </span>
+                        <span style={{ float: "right", color: "#E09B22" }}>{props.flag.services.price} Rs </span><br />
+
+                        {props.flag.extraService.name ? <div>
+                            <span style={{ float: "left", color: "#E09B22" }}> {props.flag.extraService.name} </span>
+                            <span style={{ float: "right", color: "#E09B22" }}> {props.flag.extraService.price} Rs </span>
+                        </div>
+                            : null
+                        }
+
+
+                        <br/>
                         <span style={{ float: "left", color: "#5ac36e" }}> Discount</span>
                         <span style={{ float: "right", color: "#5ac36e" }}> 50 Rs </span>
                     </div>
