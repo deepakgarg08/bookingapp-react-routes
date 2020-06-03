@@ -6,7 +6,7 @@ import TimePicker from 'react-time-picker';
 
 function DateTime(props) {
      
-    const [date, onChangeDate] = useState(new Date().toGMTString())
+    const [date, onChangeDate] = useState(new Date().toDateString())
     const [time, onChangeTime] = useState('10:00');
 
     let newCurrentPageState = props.init.currentPageState //dateAndTime

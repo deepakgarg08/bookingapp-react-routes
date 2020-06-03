@@ -30,39 +30,56 @@ class Confirmation extends React.Component {
 }
 
 function Friendly(props) {
+    console.log('props inside confirmation', props)
 
-    console.log('props.............', props.flag.dateAndTime.date)
+    switch (props.id) {
+        case 'friendly1': {
+            return (
+                <div id={props.id}>
 
-    return (
+                    <div style={{ float: "right" }}>
+                        <span style={{ color: "#6C70DC", fontFamily: 'Poppins' }}>Location: <span> </span></span>
+                        <span>  {props.flag.location} </span>
+                    </div>
+                    <div style={{ float: "left" }}>
+                        <span style={{ color: "#6C70DC", fontFamily: 'Poppins' }}>Date & TIme: <span> </span></span>
+                        <span>  {props.flag.dateAndTime.date} <span> -</span> {props.flag.dateAndTime.time} </span>
+                    </div>
 
-        <div id={props.id}>
+                </div>
+            );
 
-            <div style={{ float: "right" }}>
-                <span style={{ color: "#6C70DC", fontFamily: 'Poppins' }}>Location: <span> </span></span>
-                <span>  {props.flag.location} </span>
-            </div>
-            <div style={{ float: "left" }}>
-                <span style={{ color: "#6C70DC", fontFamily: 'Poppins' }}>Date & TIme: <span> </span></span>
-                <span>  {props.flag.dateAndTime.date} </span>
-            </div>
+        }
 
-        </div>
-    );
+        case 'friendly2': {
+            return (
+                <div id={props.id} >
+                    <div>
+                        <span style={{ float: "left", color: "#E09B22" }}>hello i am product </span>
+                        <span style={{ float: "right", color: "#E09B22" }}>1000 Rs </span><br />
+                        <span style={{ float: "left", color: "#5ac36e" }}> Discount</span>
+                        <span style={{ float: "right", color: "#5ac36e" }}> 50 Rs </span>
+                    </div>
+                    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+                    <div>
+                        <span style={{ float: "left", color: "green" }}>Total Price </span>
+                        <span style={{ float: "right", color: "green" }}> 150 Rs </span><br />
+                    </div>
+                </div>
+            )
+        }
+        case 'friendly3': {
+            return (<div id={props.id} ></div>)
+        }
+        case 'friendly4': {
+            return (<div id={props.id} ></div>)
+        }
+        default: break
+    }
+
 
     //avatar complex component
-    function Avatar(props) {
-        return (
-            < img src={props.img} alt={props.name} height="400px" id="avatar" />
-        );
-    }
 
-    //username component
-
-    function UserName(props) {
-        return (
-            <h1 id="username">{props.name}</h1>
-        );
-    }
 }
 
 //redux mappings

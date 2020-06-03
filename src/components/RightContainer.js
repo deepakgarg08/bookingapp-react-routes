@@ -17,79 +17,16 @@ class RightContainerComponent extends React.Component {
     render() {
         let CurrentPageState = this.props.init.currentPageState
 
-        console.log('CurrentPageState', CurrentPageState)
-
         switch (CurrentPageState) {
-            case 'location': {
-                return (
-                    <div>
-                        <Location />
-                    </div>
-
-                );
-            }
-            case 'staff': {
-                return (
-                    <div>
-                        <Staff />
-                    </div>
-
-                );
-            }
-
-            case 'services': {
-                return (
-                    <div>
-                        <Services />
-                    </div>
-
-                );
-            }
-
-            case 'extraService': {
-                return (
-                    <div>
-                        <ServiceExtras />
-                    </div>
-
-                );
-            }
-            case 'dateAndTime': {
-                return (
-                    <div>
-                        <DateTime />
-                    </div>
-
-                );
-            }
-
-            case 'information': {
-                return (
-                    <div id= "resize_div">
-                        <Information/>
-                    </div>
-
-                );
-            }
-
-            case 'confirmation': {
-                return (
-                    <div id= "resize_div">
-                        <Confirmation/>
-                    </div>
-
-                );
-            }
-
-
-            default:
-                console.log('hello default',CurrentPageState)
-                return
-
-
-                break
+            case 'location': return (<div><Location /></div>);
+            case 'staff': return (<Staff />);
+            case 'services': return (<Services />);
+            case 'extraService': return (<ServiceExtras />);
+            case 'dateAndTime': return (<DateTime />);
+            case 'information': return (<Information />);
+            case 'confirmation': return (<Confirmation />);
+            default: return (<Location />);
         }
-
     }
 }
 
