@@ -2,6 +2,7 @@ import React from "react";
 import { connect } from "react-redux";
 import * as actions from '../redux/actionTypes'
 
+
 class Confirmation extends React.Component {
 
     render() {
@@ -31,6 +32,21 @@ class Confirmation extends React.Component {
 
 function Friendly(props) {
     console.log('props inside confirmation', props)
+    // let newCurrentPageState = props.init.currentPageState //confirmation
+    // console.log('newCurrentPageState', newCurrentPageState)
+
+    let handleChange = (e)=>{
+        console.log('inside handleChange')
+
+        e.preventDefault()
+
+        // if (newCurrentPageState === "confirmation") {
+        //     props.changecurrentPageState('bookingConfirmed')
+        //     props.bookingConfirmed('yes')
+        
+        // }
+
+    }
 
     switch (props.id) {
         case 'friendly1': {
@@ -52,46 +68,70 @@ function Friendly(props) {
         }
 
         case 'friendly2': {
+            const servicePrice = Number(props.flag.services.price ? props.flag.services.price : 0)
+            const extraservicePrice = Number(props.flag.extraService.price ? props.flag.extraService.price : 0)
+            const discountPrice = 0;
+            const totalPrice = servicePrice + extraservicePrice + discountPrice
+
+
             return (
                 <div id={props.id} >
                     <div>
                         <span style={{ float: "left", color: "#E09B22" }}>{props.flag.services.name} </span>
-                        <span style={{ float: "right", color: "#E09B22" }}>{props.flag.services.price} Rs </span><br />
+                        <span style={{ float: "right", color: "#E09B22" }}>{servicePrice} Rs </span><br />
 
                         {props.flag.extraService.name ? <div>
                             <span style={{ float: "left", color: "#E09B22" }}> {props.flag.extraService.name} </span>
-                            <span style={{ float: "right", color: "#E09B22" }}> {props.flag.extraService.price} Rs </span>
+                            <span style={{ float: "right", color: "#E09B22" }}> {extraservicePrice} Rs </span>
                         </div>
                             : null
                         }
 
+                        {/* <input type= "text" name= "discount" value = "discount" /> */}
 
-                        <br/>
+                        {/* <br/>
                         <span style={{ float: "left", color: "#5ac36e" }}> Discount</span>
-                        <span style={{ float: "right", color: "#5ac36e" }}> 50 Rs </span>
+                        <span style={{ float: "right", color: "#5ac36e" }}>{discountPrice} Rs </span> */}
                     </div>
-                    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+                    <br /><br /><br /><br /><br /><br /><br /><br /><br />
                     <div>
                         <span style={{ float: "left", color: "green" }}>Total Price </span>
-                        <span style={{ float: "right", color: "green" }}> 150 Rs </span><br />
+                        <span style={{ float: "right", color: "green" }}> {totalPrice} Rs </span><br />
                     </div>
                 </div>
             )
         }
         case 'friendly3': {
-            return (<div id={props.id} ></div>)
+            return (
+                <div id={props.id} >
+                    <div style={{ float: "left", textAlign: "left" }}>
+                        {/*  eslint-disable-next-line */}
+                        <a href="#">Credit Card</a><br />
+                        {/*  eslint-disable-next-line */}
+                        <a href="#"> Paytm</a><br />
+                        {/*  eslint-disable-next-line */}
+                        <a href="#"> Google Pay</a><br />
+                        {/*  eslint-disable-next-line */}
+                        <a href="#"> Phone Pay</a><br />
+                        {/*  eslint-disable-next-line */}
+                        <a href="#"> NetBanking</a><br />
+                    </div>
+                </div>
+            )
         }
         case 'friendly4': {
-            return (<div id={props.id} ></div>)
+            return (
+                <div id={props.id} >
+                    <div>
+                    {/* <button style={{ float: "left", color: "voilet" }} onClick= {handleChange}>CONFIRM BOOKING</button> */}
+                    </div>
+                </div>
+            )
         }
         default: break
     }
-
-
-    //avatar complex component
-
 }
-
+{/* <i class="fa fa-credit-card" aria-hidden="true"></i> */ }
 //redux mappings
 const mapStateToProps = (state, ownProps) => {
     return {
@@ -103,13 +143,11 @@ const mapDispatchToPropsLocation = (dispatch, ownProps) => {
 
     return {
         changecurrentPageState: (currentPageState) => { dispatch({ type: actions.PAGE_STATE, payload: { currentPageState: currentPageState } }) },
-        // newLocationValue: (location) => { dispatch({ type: actions.LOCATION, payload: { location: location } }) },
-        // newstaffValue: (staff) => { dispatch({ type: actions.STAFF, payload: { staff: staff } }) },
-        // newservicesValue: (services) => { dispatch({ type: actions.SERVICES, payload: { services: services } }) },
-        // extraService: (extraService) => { dispatch({ type: actions.EXTRA_SERVICES, payload: { extraService: extraService } }) },
+        bookingConfirmed: (bookingConfirmed) => { dispatch({ type: actions.BOOKING_CONFIRMED, payload: { bookingConfirmed: bookingConfirmed } }) },
 
 
     }
 
 }
+connect(mapStateToProps, mapDispatchToPropsLocation)(Friendly)
 export default connect(mapStateToProps, mapDispatchToPropsLocation)(Confirmation)

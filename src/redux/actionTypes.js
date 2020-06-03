@@ -9,6 +9,8 @@ export const EXTRA_SERVICES = "extraservicesAdded"
 export const DATE_TIME ="dateTimeAdded"
 export const INFORMATION ="informationAdded"
 export const CONFIRMATION ="confimation"
+export const BOOKING_CONFIRMED ="bookingConfirmed"
+
 
 export const PAGE_STATE ="pageStateUpdated"
 

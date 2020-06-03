@@ -10,22 +10,25 @@ import ServiceExtras from "./ServiceExtras";
 import DateTime from "./DateTime";
 import Information from './Information'
 import Confirmation from './Confirmation'
+import BookingConfirmed from './BookingConfirmed'
 
 class RightContainerComponent extends React.Component {
 
 
     render() {
         let CurrentPageState = this.props.init.currentPageState
+        console.log('CurrentPageState', CurrentPageState)
 
         switch (CurrentPageState) {
             case 'location': return (<div><Location /></div>);
-            case 'staff': return (<Staff />);
-            case 'services': return (<Services />);
-            case 'extraService': return (<ServiceExtras />);
-            case 'dateAndTime': return (<DateTime />);
-            case 'information': return (<Information />);
-            case 'confirmation': return (<Confirmation />);
-            default: return (<Location />);
+            case 'staff': return (<div><Staff /></div>);
+            case 'services': return (<div><Services /></div>);
+            case 'extraService': return (<div><ServiceExtras /></div>);
+            case 'dateAndTime': return (<div><DateTime /></div>);
+            case 'information': return (<div id= "resize_div"><Information /></div>);
+            case 'confirmation': return (<div ><Confirmation /></div>); //id= "resize_div"
+            case 'bookingConfirmed': return (<div ><BookingConfirmed /></div>); 
+            default: return (<div><Location /></div>);
         }
     }
 }
