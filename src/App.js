@@ -17,7 +17,7 @@ class App extends React.Component {
         return (
             <BrowserRouter>
                 <div className="App">
-                    <Navbar />
+                    {/* <Navbar /> */}
                     <Switch>
                         <Route exact path="/" component={MainPage} />
                         {/* <Route path="/Location" component={Location}/> */}

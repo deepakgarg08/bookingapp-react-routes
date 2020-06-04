@@ -5,6 +5,12 @@ import * as actions from '../redux/actionTypes'
 
 class Confirmation extends React.Component {
 
+
+     changeStats = () => {
+
+        
+    }
+
     render() {
         return (
             <div id="veryouter">
