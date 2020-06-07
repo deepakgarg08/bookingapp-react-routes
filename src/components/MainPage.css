@@ -1,3 +1,11 @@
+ html {
+   min-height: 100%;
+}
+
+body {
+    background-image: linear-gradient(#FDC830, yellow, #F37335);
+}
+
 #MainPage {
     text-align: center;
     background-color: yellow;
@@ -5,12 +13,13 @@
 }
 
 #h1 {
-    color: red
+    color: red;
+    text-align: center;
 }
 
 #Wrapper {
     text-align: center;
-    background-color: white;
+    /* background-color: white; */
     display: flex;
     width: 100%;
     position: relative;
@@ -275,4 +284,3 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
     font-size: smaller;
     margin: 7px;
 }
-
