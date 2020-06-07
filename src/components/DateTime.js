@@ -6,8 +6,8 @@ import TimePicker from 'react-time-picker';
 
 function DateTime(props) {
      
-    const [date, onChangeDate] = useState(new Date().toDateString())
-    const [time, onChangeTime] = useState('10:00');
+    let [date, onChangeDate] = useState(new Date())
+    let [time, onChangeTime] = useState('10:00');
 
     let newCurrentPageState = props.init.currentPageState //dateAndTime
 
@@ -16,21 +16,23 @@ function DateTime(props) {
 
         if (newCurrentPageState === "dateAndTime") {
             props.changecurrentPageState('information')
+            date = date.toLocaleString()
             props.selectDateAndTime({date, time})
-        
         }
     }
 
     return (
         <div >
             <form onSubmit={handleSubmit}>
-                <span> Please select desired date (MM/DD/YYYY) :</span>
+                <span> Please select desired Date (MM/DD/YYYY) :</span>
                 <DatePicker className="datepickr"
                     onChange={onChangeDate}
                     value={date}
                 />
                 <br />
                 <br />
+                <span> Please select desired Time:</span>
+
                 <TimePicker className="timepickr"
                     onChange={onChangeTime}
                     value={time}

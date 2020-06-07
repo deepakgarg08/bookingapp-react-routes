@@ -6,7 +6,7 @@ import * as actions from '../redux/actionTypes'
 const currentTab = (currentState, state) => {
     if (currentState === state) {
         return "circleonclick";
-    } else if (currentState >state) {
+    } else if (currentState > state) {
         return "circleafterclick";
     } else {
         return "circlebeforeclick";
@@ -37,6 +37,8 @@ const returnState = (stateName) => {
             return 6;
         case "confirmation":
             return 7;
+        case "bookingConfirmed":
+            return 8;
 
     }
 }
@@ -79,6 +81,10 @@ function LeftContainerComponent(props) {
                     <span className={currentTab(currentState, 7)}>7</span>
                     <span className={currentHeading(currentState, 7)}> Confirmation </span>
                 </div>
+                <div className="nameproperty">
+                    {/* <span className={currentTab(currentState, 8)}></span> */}
+                    <span className={currentHeading(currentState, 8)}>  </span>
+                </div>
             </div>
         </div>
     );
@@ -93,6 +99,3 @@ const mapStateToProps = (state, ownProps) => {
 
 
 export default connect(mapStateToProps)(LeftContainerComponent)
-
-
-// export default LeftContainerComponent

@@ -163,42 +163,38 @@ button#friendly:hover {
 
 /* for date and time */
 
-.datepickr , .timepickr{
+.datepickr, .timepickr {
     background-color: greenyellow;
     text-align: left;
     width: 690px;
 }
 
-#text{
+#text {
     text-align: left;
-
 }
 
-#bootstrapForm{
+#bootstrapForm {
     width: 750px;
 }
 
 input[type=number] {
     -moz-appearance: textfield;
-  }
-
-  input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
 }
 
-#resize_div{
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+#resize_div {
     width: 690px;
 }
 
-
-
-#h3_{
+#h3_ {
     color: green;
 }
 
-#friendly1{
+#friendly1 {
     display: inline-block;
     margin: 0px 0px 15px;
     height: 76px;
@@ -212,7 +208,6 @@ input::-webkit-inner-spin-button {
     border-radius: 2px;
     padding: 13px 20px;
 }
-
 
 #friendly2 {
     display: inline-block;
@@ -229,9 +224,7 @@ input::-webkit-inner-spin-button {
     padding: 13px 20px;
     position: absolute;
     left: 3%;
-
 }
-
 
 #friendly3 {
     display: inline-block;
@@ -247,12 +240,10 @@ input::-webkit-inner-spin-button {
     border-radius: 2px;
     padding: 13px 20px;
     position: absolute;
-
     right: 3%;
-    
 }
 
-#friendly4{
+#friendly4 {
     display: inline-block;
     margin: 0px 0px 15px;
     height: 76px;
@@ -267,25 +258,21 @@ input::-webkit-inner-spin-button {
     padding: 13px 20px;
     margin-top: 49%;
 }
-#outerdiv{
+
+#outerdiv {
     display: block;
     height: 405px;
     width: 690px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#confirmationbutton {
+    float: right;
+    color: white;
+    background: #6c70dc;
+    height: 36px;
+    padding: 5px;
+    border-radius: 2px;
+    font-size: smaller;
+    margin: 7px;
+}
 
