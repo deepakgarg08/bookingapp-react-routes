@@ -6,7 +6,6 @@ import * as actions from '../redux/actionTypes'
 function Friendly(props) {
 
     const { elementProperty } = props
-    console.log('props', props)
 
 
     const individualData = elementProperty.map((e) => {
@@ -30,10 +29,8 @@ function Friendly(props) {
     );
 
     function handleEvent(name, price = 0) {
-        console.log('price', price)
 
         let newCurrentPageState = props.init.currentPageState //location
-        console.log('props in friendly', props)
 
         if (newCurrentPageState === 'location') {
             props.changecurrentPageState('staff')
@@ -52,7 +49,6 @@ function Friendly(props) {
             props.changecurrentPageState('dateAndTime') //this will be changed later on to services
             props.extraService({ name, price })
         } else {
-            console.log(' i m fired in frinedly compon...not a good news', name)
         }
 
     }
