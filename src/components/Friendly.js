@@ -38,15 +38,15 @@ function Friendly(props) {
 
         }
         else if (newCurrentPageState === 'staff') {
-            props.changecurrentPageState('services') //this will be changed later on to services
+            props.changecurrentPageState('services')
             props.newstaffValue(name)
         }
         else if (newCurrentPageState === 'services') {
-            props.changecurrentPageState('extraService') //this will be changed later on to services
+            props.changecurrentPageState('extraService')
             props.newservicesValue({ name, price })
         }
         else if (newCurrentPageState === 'extraService') {
-            props.changecurrentPageState('dateAndTime') //this will be changed later on to services
+            props.changecurrentPageState('dateAndTime')
             props.extraService({ name, price })
         } else {
         }

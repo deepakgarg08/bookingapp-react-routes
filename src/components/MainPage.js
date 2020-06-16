@@ -10,7 +10,7 @@ function MainPage() {
     return (
 
         <div className="MainPage">
-            <h1 id="h1"> Welcome to main page of booking app</h1>
+            <h1 id="h1"> Welcome to booking app</h1>
             <div id="Wrapper">
                 <div id="container">
                     <LeftContainerComponent />
