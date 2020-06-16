@@ -1,5 +1,4 @@
 import React from 'react';
-import './MainPage.css'
 import LeftContainerComponent from './LeftContainer'
 import RightContainerComponent from './RightContainer'
 

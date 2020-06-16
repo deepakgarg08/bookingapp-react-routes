@@ -9,8 +9,9 @@ let initState = {
     dateAndTime: "",
     information: "",
     // confirmation: "",
-    currentPageState: "location" ,//all in lowercase,
-    bookingConfirmed : null
+    currentPageState: "location",//all in lowercase,
+    bookingConfirmed: null,
+    requestId : ''
 }
 
 
@@ -75,12 +76,19 @@ function reducer(state = initState, action) {
                 currentPageState: action.payload.currentPageState
             }
 
-            case actionTypes.BOOKING_CONFIRMED:
-                return {
-    
-                    ...state,
-                    bookingConfirmed: action.payload.bookingConfirmed
-                }
+        case actionTypes.BOOKING_CONFIRMED:
+            return {
+
+                ...state,
+                bookingConfirmed: action.payload.bookingConfirmed
+            }
+
+        case actionTypes.REQUEST_ID:
+            return {
+
+                ...state,
+                requestId: action.payload.requestId
+            }
 
         //just for references...will be deleted later on 
         case actionTypes.BUG_ADDED:
