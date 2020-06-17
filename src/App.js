@@ -12,6 +12,8 @@ import Information from './components/Information'
 import Confirmation from './components/Confirmation'
 import MainPage from "./components/MainPage";
 
+//..
+
 class App extends React.Component {
     render() {
         return (

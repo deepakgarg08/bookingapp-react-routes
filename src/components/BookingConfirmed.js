@@ -23,11 +23,6 @@ class BookingConfirmed extends React.Component {
     }
 }
 
-
-
-
-
-
 const mapStateToProps = (state) => {
     return {
         init: state
