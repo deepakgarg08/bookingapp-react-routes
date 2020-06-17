@@ -1,23 +1,46 @@
 import React from "react";
 import { connect } from "react-redux";
 import * as actions from '../redux/actionTypes'
-
+import axios from 'axios'
 
 
 function FriendlyConfirmation(props) {
-    console.log('props inside confirmation', props)
-    let newCurrentPageState = props.init.currentPageState //confirmation
-    console.log('newCurrentPageState', newCurrentPageState)
+    // console.log('props inside confirmation', props)
 
-    let handleChange = (e)=>{
-        console.log('inside handleChange')
-
+    let handleChange = (e) => {
         e.preventDefault()
 
-        if (newCurrentPageState === "confirmation") {
-            props.changecurrentPageState('bookingConfirmed')
-            props.bookingConfirmed('yes')
-        
+        console.log('inside handleChange')
+
+        // let newCurrentPageState = props.init.currentPageState //confirmation
+        let pageState = props.init //confirmation
+        console.log('pageState...1', pageState)
+
+
+        let request_id = parseInt(Math.random() * 1000) + 1
+        console.log('request_id', request_id)
+        pageState.requestId = request_id
+
+        console.log('pageState...2', pageState)
+
+
+        if (pageState.currentPageState === "confirmation") {
+                axios
+                    .post("http://localhost:4000/new/", {
+                        // operator_name: this.operator_name,
+                        customerData: pageState
+                    })
+                    .then(function (response) {
+                        console.log("response:::",response);
+                        props.changecurrentPageState('bookingConfirmed')
+                        props.bookingConfirmed('yes')
+                        props.requestId(request_id)
+
+                    })
+                    .catch(function (error) {
+                        console.log(error);
+                    });
+
         }
 
     }
@@ -97,7 +120,7 @@ function FriendlyConfirmation(props) {
             return (
                 <div id={props.id} >
                     <div>
-                    <button id="confirmationbutton" onClick= {handleChange}>CONFIRM BOOKING</button>
+                        <button id="confirmationbutton" onClick={handleChange}>CONFIRM BOOKING</button>
                     </div>
                 </div>
             )
@@ -118,6 +141,10 @@ const mapDispatchToPropsLocation = (dispatch, ownProps) => {
     return {
         changecurrentPageState: (currentPageState) => { dispatch({ type: actions.PAGE_STATE, payload: { currentPageState: currentPageState } }) },
         bookingConfirmed: (bookingConfirmed) => { dispatch({ type: actions.BOOKING_CONFIRMED, payload: { bookingConfirmed: bookingConfirmed } }) },
+        requestId: (requestId) => {
+            dispatch({ type: actions.REQUEST_ID, payload: { requestId: requestId } })
+
+        },
 
 
     }

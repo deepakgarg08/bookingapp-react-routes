@@ -1,39 +1,11 @@
 import React, { Component } from "react";
 import { BOOKING_CONFIRMED, REQUEST_ID } from '../redux/actionTypes'
 import { connect } from 'react-redux'
-import axios from 'axios'
 
 class BookingConfirmed extends React.Component {
     render() {
-        let request_id = parseInt(Math.random() * 1000) + 1
-        console.log('request_id', request_id)
-        let CurrentPageState = this.props.init
-        CurrentPageState.request_id = request_id
-
-        // let newCurrentPageState = this.props.init.currentPageState //confirmation
-        // console.log('newCurrentPageState', newCurrentPageState)
-
-        // if (newCurrentPageState === "bookingConfirmed") {
-        //     this.props.requestId(request_id)
-
-        
-        // }
-
-
-
-
-
-        axios
-            .post("http://localhost:4000/new/", {
-                // operator_name: this.operator_name,
-                customerData: CurrentPageState
-            })
-            .then(function (response) {
-                console.log(response);
-            })
-            .catch(function (error) {
-                console.log(error);
-            });
+       
+        let request_id = this.props.init.requestId
 
         return (
             <div id="veryouter">
@@ -45,8 +17,6 @@ class BookingConfirmed extends React.Component {
                             <h4 id="h3_"> Your confirmation id is: {request_id} </h4><br />
                         </div>
                     </div>
-
-
                 </div>
             </div>
         )
@@ -68,12 +38,7 @@ const mapDispatchToProps = (dispatch) => {
     return {
         changecurrentPageState: (currentPageState) => {
             dispatch({ type: BOOKING_CONFIRMED, payload: { currentPageState: currentPageState } })
-        },
-        requestId: (requestId) => {
-            dispatch({ type: REQUEST_ID, payload: { requestId: requestId } })
-
-        },
-
+        }
     }
 
 }
