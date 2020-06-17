@@ -38,6 +38,7 @@ const returnState = (stateName) => {
             return 7;
         case "bookingConfirmed":
             return 8;
+        default: return 1
 
     }
 }

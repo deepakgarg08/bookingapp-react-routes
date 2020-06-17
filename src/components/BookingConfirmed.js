@@ -1,5 +1,5 @@
-import React, { Component } from "react";
-import { BOOKING_CONFIRMED, REQUEST_ID } from '../redux/actionTypes'
+import React from "react";
+import { BOOKING_CONFIRMED } from '../redux/actionTypes'
 import { connect } from 'react-redux'
 
 class BookingConfirmed extends React.Component {
@@ -22,11 +22,6 @@ class BookingConfirmed extends React.Component {
         )
     }
 }
-
-
-
-
-
 
 const mapStateToProps = (state) => {
     return {

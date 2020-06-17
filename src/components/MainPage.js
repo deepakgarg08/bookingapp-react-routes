@@ -3,8 +3,6 @@ import LeftContainerComponent from './LeftContainer'
 import RightContainerComponent from './RightContainer'
 
 function MainPage() {
-
-
    
     return (
 
