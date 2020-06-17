@@ -9,11 +9,12 @@ class Location extends React.Component {
             { name: "Kalanaur", img: "image3.jpg", id: 3 },
             { name: "Bhiwani", img: "image4.jpg", id: 4 },
             { name: "Delhi", img: "image5.jpg", id: 5 },
-            { name: "Add new City", img: "image6.jpg", id: 6 }
+            { name: "Hisar", img: "image5.jpg", id: 6 },
+            // { name: "Add new City", img: "image6.jpg", id: 6 }
         ]
     }
     render() {
-    
+    console.log("REACT_APP_HOST",process.env.REACT_APP_HOST)
 
         return (
 

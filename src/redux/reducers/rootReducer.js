@@ -8,7 +8,7 @@ let initState = {
     extraService: "",
     dateAndTime: "",
     information: "",
-    // confirmation: "",
+    confirmation: "",
     currentPageState: "location",//all in lowercase,
     bookingConfirmed: null,
     requestId : ''

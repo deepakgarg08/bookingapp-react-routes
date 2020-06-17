@@ -3,7 +3,7 @@ import { connect } from "react-redux";
 import * as actions from '../redux/actionTypes'
 import axios from 'axios'
 let host = process.env.REACT_APP_HOST
-let server_port = process.env.REACT_APP_PORT
+let server_port = process.env.REACT_APP_PORT || 4000
 
 axios.defaults.baseURL = host + server_port
 console.log('host+server_port', host + server_port)
