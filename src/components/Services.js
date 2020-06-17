@@ -10,7 +10,7 @@ class Services extends React.Component {
             { name: "Reve Osmosis (RO)", img: "water1.jpg", price: "1000", id: 3 },
             { name: "Kent (RO)", img: "water1.jpg", price: "2000", id: 4 },
             { name: "Aquasure (RO)", img: "water1.jpg", price: "500", id: 5 },
-            { name: "water Geyser", img: "geyser.jpg", price: "5000", id: 6 },
+             { name: "water Geyser", img: "geyser.jpg", price: "5000", id: 6 },
 
         ]
     }
@@ -21,7 +21,7 @@ class Services extends React.Component {
             <div>
                 <span><Friendly elementProperty={this.serviceData.serviceProps} /></span>
             </div>
-
+  
         )
     }
 }

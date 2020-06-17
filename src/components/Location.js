@@ -12,8 +12,9 @@ class Location extends React.Component {
             { name: "Add new City", img: "image6.jpg", id: 6 }
         ]
     }
-
     render() {
+    
+
         return (
 
             <div>

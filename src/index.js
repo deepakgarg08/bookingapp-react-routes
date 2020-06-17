@@ -8,9 +8,9 @@ import { createStore } from 'redux';
 import reducer from './redux/reducers/rootReducer'
 
 const store = createStore(reducer)
-store.subscribe(() => {
-  console.log('state updated to', store.getState()) 
-})
+// store.subscribe(() => {
+//   console.log('state updated to', store.getState()) 
+// })
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}> <App /></Provider>

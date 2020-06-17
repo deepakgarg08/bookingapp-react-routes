@@ -60,22 +60,22 @@ class Information extends React.Component {
                     <h2>Create Account</h2>
                     <form onSubmit={this.handleSubmit} noValidate>
                         <div className='fullName'>
-                            <label htmlFor="fullName">Full Name</label>
-                            <input type='text' name='fullName' onChange={this.handleChange} noValidate/>
+                            <label htmlFor="fullName">Full Name*</label>
+                            <input type='text'  className="form-control" name='fullName' onChange={this.handleChange} noValidate/>
                         </div>
                         <div className='address'>
-                            <label htmlFor="address">address</label>
-                            <input type='text' name='address' onChange={this.handleChange} noValidate/>
+                            <label htmlFor="address">address*</label>
+                            <input type='text'  className="form-control" name='address' onChange={this.handleChange} noValidate/>
                         </div>
 
                         <div className='mobile'>
-                            <label htmlFor="mobile">mobile</label>
-                            <input type='number' name='mobile' onChange={this.handleChange} noValidate/>
+                            <label htmlFor="mobile">mobile*</label>
+                            <input type='number' className="form-control"  name='mobile' onChange={this.handleChange} noValidate/>
                         </div>
 
                         <div className='additionalInfo'>
                             <label htmlFor="additionalInfo">additionalInfo</label>
-                            <input type='text' name='additionalInfo' onChange={this.handleChange} noValidate/>
+                            <input type='text'  className="form-control" name='additionalInfo' onChange={this.handleChange} noValidate/>
                         </div>
 
                         <div className='submit'>
