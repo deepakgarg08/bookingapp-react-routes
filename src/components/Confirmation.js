@@ -4,6 +4,7 @@ import * as actions from '../redux/actionTypes'
 import FriendlyConfirmation from "./FriendlyConfirmation";
 
 
+
 class Confirmation extends React.Component {
 
     render() {

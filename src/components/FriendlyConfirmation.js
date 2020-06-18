@@ -5,22 +5,24 @@ import axios from 'axios'
 let host = process.env.REACT_APP_HOST
 let server_port = process.env.REACT_APP_PORT || 4000
 
-axios.defaults.baseURL = host + server_port
-console.log('host+server_port', host + server_port)
+// axios.defaults.baseURL = host + server_port
 
 function FriendlyConfirmation(props) {
     const [discount, setDiscount] = useState('')
-    console.log('discountout', discount)
 
     let handleChange = (e) => {
         e.preventDefault()
+        let totalamount = sessionStorage.getItem('totalprice')
+        console.log('totalamount', totalamount)
         let pageState = props.init
 
         let request_id = parseInt(Math.random() * 1000) + 1
         pageState.requestId = request_id
+        pageState.totalamount = totalamount
 
         if (pageState.currentPageState === "confirmation") {
             axios
+            // .post("/new/", {
                 .post("/new/", {
                     customerData: pageState
                 })
@@ -73,6 +75,8 @@ function FriendlyConfirmation(props) {
                 discountPrice = 0.10 * totalPrice //5% discount
                 totalPrice = totalPrice - discountPrice
             }
+
+            sessionStorage.setItem('totalprice', totalPrice)
 
             return (
                 <div id={props.id} >
