@@ -1,5 +1,5 @@
 import React from 'react'
-import {connect} from 'react-redux'
+import { connect } from 'react-redux'
 import * as actions from '../redux/actionTypes'
 
 // const validEmailRegex = RegExp(
@@ -30,8 +30,8 @@ class Information extends React.Component {
 
     handleChange = (event) => {
         event.preventDefault();
-        const {name, value} = event.target;
-        this.setState({[name]: value});
+        const { name, value } = event.target;
+        this.setState({ [name]: value });
     }
 
     handleSubmit = (event) => {
@@ -55,34 +55,44 @@ class Information extends React.Component {
 
     render() {
         return (
-            <div className='wrapper'>
-                <div className='form-wrapper'>
-                    <h2>Create Account</h2>
+
+            <div className='wrapper' id="friendlyprops">
+                <h4>Please Fill Your information</h4>
+                <br />
+                <div className='form-group'>
+
+
                     <form onSubmit={this.handleSubmit} noValidate>
-                        <div className='fullName'>
+                        <div className='form-group col-md-6' style={{ float: "left" }}>
                             <label htmlFor="fullName">Full Name*</label>
-                            <input type='text'  className="form-control" name='fullName' onChange={this.handleChange} noValidate/>
+                            <input type='text' className="form-control" name='fullName' onChange={this.handleChange} noValidate />
                         </div>
-                        <div className='address'>
+
+
+                        <div className='form-group col-md-6' style={{ float: "right" }}>
                             <label htmlFor="address">address*</label>
-                            <input type='text'  className="form-control" name='address' onChange={this.handleChange} noValidate/>
+                            <input type='text' className="form-control" name='address' onChange={this.handleChange} noValidate />
                         </div>
 
-                        <div className='mobile'>
+                        <div className='form-group col-md-6' style={{ float: "left" }} >
                             <label htmlFor="mobile">mobile*</label>
-                            <input type='number' className="form-control"  name='mobile' onChange={this.handleChange} noValidate/>
+                            <input type='text' className="form-control" name='mobile' onChange={this.handleChange} noValidate />
                         </div>
 
-                        <div className='additionalInfo'>
+                        <div className='form-group col-md-6' style={{ float: "right" }} >
                             <label htmlFor="additionalInfo">additionalInfo</label>
-                            <input type='text'  className="form-control" name='additionalInfo' onChange={this.handleChange} noValidate/>
+                            <input type='text' className="form-control" name='additionalInfo' onChange={this.handleChange} noValidate />
                         </div>
 
-                        <div className='submit'>
-                            <button>Create</button>
+                        <div className='submit' id = "informationdiv">
+                            <button id="confirmationbutton">Next</button>
                         </div>
+                        
                     </form>
+
                 </div>
+
+                
             </div>
         );
     }
@@ -101,10 +111,10 @@ const mapDispatchToPropsLocation = (dispatch, ownProps) => {
 
     return {
         changecurrentPageState: (currentPageState) => {
-            dispatch({type: actions.PAGE_STATE, payload: {currentPageState: currentPageState}})
+            dispatch({ type: actions.PAGE_STATE, payload: { currentPageState: currentPageState } })
         },
         changeInformation: (information) => {
-            dispatch({type: actions.INFORMATION, payload: {information: information}})
+            dispatch({ type: actions.INFORMATION, payload: { information: information } })
         },
     }
 }

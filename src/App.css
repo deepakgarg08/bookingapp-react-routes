@@ -194,7 +194,7 @@ input[type=number] {
 
 input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
     -webkit-appearance: none;
-    margin: 0;
+    /* margin: 0; */
 }
 
 #resize_div {
@@ -286,3 +286,63 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
     font-size: smaller;
     margin: 7px;
 }
+
+
+
+label{
+    font-size: 14px;
+}
+
+body{
+    font-family: system-ui;
+}
+
+
+#informationdiv {
+    display: inline-block;
+    margin: 0px 0px 15px;
+    height: 76px;
+    width: 100%;
+    /* padding: 0px; */
+    background: #FFF;
+    box-shadow: 0px 0px 5px #555;
+    filter: drop-shadow(0px 0px 5px #555);
+    -webkit-filter: drop-shadow(0px 0px 5px #555);
+    filter: drop-shadow(0px 0px 5px #555);
+    border-radius: 2px;
+    padding: 13px 20px;
+    margin-top: 33%;
+}
+
+#dateandtimediv{
+    display: inline-block;
+    margin: 0px 0px 15px;
+    height: 76px;
+    width: 100%;
+    /* padding: 0px; */
+    background: #FFF;
+    box-shadow: 0px 0px 5px #555;
+    filter: drop-shadow(0px 0px 5px #555);
+    -webkit-filter: drop-shadow(0px 0px 5px #555);
+    filter: drop-shadow(0px 0px 5px #555);
+    border-radius: 2px;
+    padding: 13px 20px;
+    margin-top: 45%;
+}
+
+#discountinput{
+    position: absolute;
+    bottom: 22%;
+    right: 39%;
+    color: #5ac36e;
+}
+
+
+
+
+
+
+
+
+
+

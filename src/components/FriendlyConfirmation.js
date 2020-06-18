@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { connect } from "react-redux";
 import * as actions from '../redux/actionTypes'
 import axios from 'axios'
@@ -9,10 +9,12 @@ axios.defaults.baseURL = host + server_port
 console.log('host+server_port', host + server_port)
 
 function FriendlyConfirmation(props) {
+    const [discount, setDiscount] = useState('')
+    console.log('discountout', discount)
 
     let handleChange = (e) => {
         e.preventDefault()
-        let pageState = props.init 
+        let pageState = props.init
 
         let request_id = parseInt(Math.random() * 1000) + 1
         pageState.requestId = request_id
@@ -58,9 +60,19 @@ function FriendlyConfirmation(props) {
         case 'friendly2': {
             const servicePrice = Number(props.flag.services.price ? props.flag.services.price : 0)
             const extraservicePrice = Number(props.flag.extraService.price ? props.flag.extraService.price : 0)
-            const discountPrice = 0;
-            const totalPrice = servicePrice + extraservicePrice + discountPrice
+            let discountPrice = 0;
+            let totalPrice = servicePrice + extraservicePrice + discountPrice
+            // let discountdata = sessionStorage.getItem("mydiscountkey")
+            console.log('discountdata in friendly2', discount)
+            if(discount === 'discount5'){
 
+                discountPrice = 0.05 * totalPrice //5% discount
+                totalPrice = totalPrice - discountPrice
+
+            }else if(discount === 'discount10'){
+                discountPrice = 0.10 * totalPrice //5% discount
+                totalPrice = totalPrice - discountPrice
+            }
 
             return (
                 <div id={props.id} >
@@ -74,8 +86,7 @@ function FriendlyConfirmation(props) {
                         </div>
                             : null
                         }
-
-                        {/* <input type= "text" name= "discount" value = "discount" /> */}
+                        <input type="text" name="discount" id="discountinput" placeholder="Enter Coupon Code" value={discount} onChange={e => setDiscount(e.target.value)} />
 
                         {/* <br/>
                         <span style={{ float: "left", color: "#5ac36e" }}> Discount</span>
