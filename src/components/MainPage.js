@@ -4,8 +4,6 @@ import RightContainerComponent from './RightContainer'
 
 function MainPage() {
 
-
-   
     return (
 
         <div className="MainPage">
