@@ -1,5 +1,4 @@
 import React from 'react';
-// import LeftContainerComponent from './LeftContainer'
 import RightContainerComponent from './RightContainer'
 import Navbar from './Navbar'
 function MainPage() {
@@ -10,7 +9,6 @@ function MainPage() {
             <div id="Wrapper">
                 <div id="container">
                     <Navbar />
-
                     <div id="rightsidecontainer">
                         <div id="rightcontainerdata">
                             <RightContainerComponent />
@@ -19,41 +17,7 @@ function MainPage() {
                 </div>
             </div>
         </div>
-
-
     );
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 export default MainPage;

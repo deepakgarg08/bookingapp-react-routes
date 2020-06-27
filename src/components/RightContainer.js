@@ -2,8 +2,6 @@ import React from "react";
 import Location from './Location'
 import Staff from './Staff'
 import Services from './Services'
-
-
 import { connect } from 'react-redux'
 import { PAGE_STATE } from '../redux/actionTypes'
 import ServiceExtras from "./ServiceExtras";
