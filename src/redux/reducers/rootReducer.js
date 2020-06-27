@@ -59,7 +59,7 @@ function reducer(state = initState, action) {
             return {
                 ...state,
                 information: action.payload.information
-
+ 
             }
 
         case actionTypes.CONFIRMATION:
