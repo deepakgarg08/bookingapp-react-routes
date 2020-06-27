@@ -2,8 +2,6 @@ import React from "react";
 import Location from './Location'
 import Staff from './Staff'
 import Services from './Services'
-
-
 import { connect } from 'react-redux'
 import { PAGE_STATE } from '../redux/actionTypes'
 import ServiceExtras from "./ServiceExtras";
@@ -16,6 +14,7 @@ class RightContainerComponent extends React.Component {
 
 
     render() {
+        console.log("this.props in rightcontainer", this.props)
         let CurrentPageState = this.props.init.currentPageState
         // console.log('CurrentPageState', CurrentPageState)
 

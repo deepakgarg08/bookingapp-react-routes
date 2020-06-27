@@ -1,6 +1,6 @@
 import * as actionTypes from '../actionTypes'
 let lastId = 0;
-
+//all in lowercase
 let initState = {
     location: "",
     staff: "",
@@ -8,10 +8,9 @@ let initState = {
     extraService: "",
     dateAndTime: "",
     information: "",
-    confirmation: "",
-    currentPageState: "location",//all in lowercase,
+    currentPageState: "location",
     bookingConfirmed: null,
-    requestId : ''
+    requestId: '',
 }
 
 
@@ -89,6 +88,8 @@ function reducer(state = initState, action) {
                 ...state,
                 requestId: action.payload.requestId
             }
+
+
 
         //just for references...will be deleted later on 
         case actionTypes.BUG_ADDED:

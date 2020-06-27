@@ -17,6 +17,7 @@ class Staff extends React.Component {
     }
 
     render() {
+        console.log('staff comp fired')
         return (
 
             <div>

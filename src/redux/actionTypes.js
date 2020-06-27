@@ -11,7 +11,5 @@ export const INFORMATION ="informationAdded"
 export const CONFIRMATION ="confimation"
 export const BOOKING_CONFIRMED ="bookingConfirmed"
 export const REQUEST_ID ="requestId"
-
-
 export const PAGE_STATE ="pageStateUpdated"
 
