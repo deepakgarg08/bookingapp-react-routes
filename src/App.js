@@ -26,11 +26,11 @@ class App extends React.Component {
                         <Route exact path="/" component={MainPage} />
                         <Route path="/Location" component={Location}/>
                         <Route path="/Staff" component={Staff} />
-                        <Route path="/Services" component={Services} />
-                        <Route path="/ServiceExtras" component={ServiceExtras} />
-                        <Route path="/DateTime" component={DateTime} />
-                        <Route path="/Information" component={Information} />
-                        <Route path="/Confirmation" component={Confirmation} />
+                        {/* <Route path="/Services" component={Services} /> */}
+                        {/* <Route path="/ServiceExtras" component={ServiceExtras} /> */}
+                        {/* <Route path="/DateTime" component={DateTime} /> */}
+                        {/* <Route path="/Information" component={Information} /> */}
+                        {/* <Route path="/Confirmation" component={Confirmation} /> */}
                     </Switch>
 
                 </div>

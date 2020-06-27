@@ -14,4 +14,5 @@ export const REQUEST_ID ="requestId"
 
 
 export const PAGE_STATE ="pageStateUpdated"
+export const WHICH_NAV = "detectNavButton"
 

@@ -11,7 +11,8 @@ let initState = {
     // confirmation: "",
     currentPageState: "location",//all in lowercase,
     bookingConfirmed: null,
-    requestId : ''
+    requestId: '',
+    whichNav: ''
 }
 
 
@@ -89,6 +90,13 @@ function reducer(state = initState, action) {
                 ...state,
                 requestId: action.payload.requestId
             }
+        case actionTypes.WHICH_NAV:
+            return {
+
+                ...state,
+                requestId: action.payload.whichNav
+            }
+            
 
         //just for references...will be deleted later on 
         case actionTypes.BUG_ADDED:

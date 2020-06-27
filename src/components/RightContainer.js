@@ -16,6 +16,7 @@ class RightContainerComponent extends React.Component {
 
 
     render() {
+        console.log("this.props in rightcontainer", this.props)
         let CurrentPageState = this.props.init.currentPageState
         console.log('CurrentPageState', CurrentPageState)
 
