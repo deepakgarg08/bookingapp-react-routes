@@ -231,7 +231,7 @@ body {
     display: inline-block;
     margin: 0px 0px 15px;
     height: 76px;
-    width: 111%;
+    width: 113%;
     /* width: 690px; */
     /* padding: 0px; */
     background: #FFF;
@@ -241,15 +241,18 @@ body {
     filter: drop-shadow(0px 0px 5px #555);
     border-radius: 2px;
     padding: 13px 20px;
-    margin-left: 5%;
+    margin-left: 4%;
 }
 
 #friendly2 {
 
     display: inline-block;
     margin: 8px;
-    height: 309px;
-    width: 370px;
+    /* height: 309px; */
+    height: 52%;
+
+    /* width: 370px; */
+    width:46%;
     padding: 0px;
     background: #FFF;
     box-shadow: 0px 0px 5px #555;
@@ -266,8 +269,11 @@ body {
 #friendly3 {
     display: inline-block;
     margin: 8px;
-    height: 309px;
-    width: 305px;
+    /* height: 309px; */
+    height: 52%;
+
+    /* width: 305px; */
+    width:40%;
     padding: 0px;
     background: #FFF;
     box-shadow: 0px 0px 5px #555;
@@ -294,8 +300,8 @@ body {
     border-radius: 2px;
     padding: 13px 20px;
     margin-top: 49%;
-    width: 111%;
-    margin-left: 5%;
+    width: 113%;
+    margin-left: 4%;
 
 }
 
@@ -310,6 +316,13 @@ body {
     min-height:600px;
 }
 
+#discountinput{
+    position: relative;
+    bottom: 22%;
+    /* right: 28%; */
+    color: #477e51;
+    width: 50%;
+}
 
 @media (max-width: 575px) {
     .nav-prop {
@@ -325,9 +338,9 @@ body {
         margin-bottom: 0%;
     }
 
-    body {
+    /* body {
         background: rgb(121, 110, 16)
-    }
+    } */
 
     #dateandtimediv{
         margin-top: 59%;
@@ -351,9 +364,9 @@ body {
 /* Medium devices (tablets) */
 
 @media (min-width: 768px) {
-    body {
+    /* body {
         background: blue
-    }
+    } */
     #dateandtimediv{
         margin-top: 59%;
     }
@@ -365,9 +378,9 @@ body {
 /* Large devices (desktops) */
 
 @media (min-width: 992px) {
-    body {
+    /* body {
         background: green;
-    }
+    } */
     
     #dateandtimediv{
         margin-top: 43%;
@@ -380,9 +393,9 @@ body {
 /* Extra large devices (large desktops) */
 
 @media (min-width: 1200px) {
-    body {
+    /* body {
         background: yellow;
-    }
+    } */
     #dateandtimediv{
         margin-top: 35%;
     }
@@ -397,9 +410,9 @@ body {
 
 @media (max-width: 767px) {
 
-    body {
+    /* body {
         background: rgb(80, 80, 64);
-    }
+    } */
     
     .leftcontainer {
         height: auto
@@ -445,9 +458,9 @@ body {
         margin-left: -20%;
       
     }
-    body {
+    /* body {
         background: rgb(60, 55, 129);
-    }
+    } */
    
 }
 

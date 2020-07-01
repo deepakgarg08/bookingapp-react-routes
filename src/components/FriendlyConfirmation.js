@@ -98,7 +98,7 @@ function FriendlyConfirmation(props) {
                         <span style={{ float: "left", color: "#5ac36e" }}> Discount</span>
                         <span style={{ float: "right", color: "#5ac36e" }}>{discountPrice} Rs </span> */}
                     </div>
-                    <br /><br /><br /><br /><br /><br /><br /><br />
+                    <br />
                     <div>
                         <span style={{ float: "left", color: "green" }}>Total Price </span>
                         <span style={{ float: "right", color: "green" }}> {totalPrice} Rs </span><br />
