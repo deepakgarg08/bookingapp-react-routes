@@ -65,6 +65,8 @@
 #rightcontainer {
     background-color: #E4EBF3;
     min-height: 600px;
+    width: 100%;
+
 }
 
 .leftcontainer {
@@ -157,7 +159,84 @@ body {
 }
 
 
-/* @media (max-width: 575px) {
+/* date and time */
+.datepickr, .timepickr {
+    background-color: greenyellow;
+    text-align: left;
+    width: 690px;
+}
+
+.dateandtimediv{
+    display: inline-block;
+    margin: 0px 0px 15px;
+    height: 76px;
+    width: 90%;
+    padding: 0px;
+    /* background: #FFF; */
+    /* box-shadow: 0px 0px 5px #555; */
+    /* filter: drop-shadow(0px 0px 5px #555); */
+    /* -webkit-filter: drop-shadow(0px 0px 5px #555); */
+    /* filter: drop-shadow(0px 0px 5px #555); */
+    border-radius: 2px;
+    padding: 13px 20px;
+    margin-top: 0%;
+}
+
+
+#dateandtimediv{
+    /* display: inline-block; */
+    margin: 0px 0px 15px;
+    height: 76px;
+    width: 100%;
+    /* padding: 0px; */
+    background: #FFF;
+    box-shadow: 0px 0px 5px #555;
+    filter: drop-shadow(0px 0px 5px #555);
+    -webkit-filter: drop-shadow(0px 0px 5px #555);
+    filter: drop-shadow(0px 0px 5px #555);
+    border-radius: 2px;
+    padding: 13px 20px;
+    margin-top: 35%;
+    /* margin-top: calc(100% - 120px); */
+    /* margin-top: 35%; */
+    float: right;
+}
+
+#confirmationbutton {
+    float: right;
+    color: white;
+    background: #6c70dc;
+    height: 36px;
+    padding: 5px;
+    border-radius: 2px;
+    font-size: smaller;
+    margin: 7px;
+}
+
+/* information */
+
+#informationdiv {
+    display: inline-block;
+    margin: 0px 0px 15px;
+    height: 76px;
+    width: 100%;
+    padding: 0px;
+    background: #FFF;
+    box-shadow: 0px 0px 5px #555;
+    filter: drop-shadow(0px 0px 5px #555);
+    -webkit-filter: drop-shadow(0px 0px 5px #555);
+    filter: drop-shadow(0px 0px 5px #555);
+    border-radius: 2px;
+    padding: 13px 20px;
+    margin-top: 33%;
+}
+
+.date-time{
+    width: 49%;
+}
+
+
+@media (max-width: 575px) {
     .nav-prop {
         background-color: #292d32;
     }
@@ -170,14 +249,25 @@ body {
         margin-top: 5%;
         margin-bottom: 0%;
     }
+
+    body {
+        background: rgb(121, 110, 16)
+    }
+
+    #dateandtimediv{
+        margin-top: 59%;
+    }
     
-} */
+}
 
 /* Medium devices (tablets) */
 
 @media (min-width: 768px) {
     body {
-        /* background: blue */
+        background: blue
+    }
+    #dateandtimediv{
+        margin-top: 59%;
     }
 }
 
@@ -185,15 +275,23 @@ body {
 
 @media (min-width: 992px) {
     body {
-        /* background: green; */
+        background: green;
     }
+    
+    #dateandtimediv{
+        margin-top: 43%;
+    }
+    
 }
 
 /* Extra large devices (large desktops) */
 
 @media (min-width: 1200px) {
     body {
-        /* background: yellow; */
+        background: yellow;
+    }
+    #dateandtimediv{
+        margin-top: 35%;
     }
 }
 
@@ -216,6 +314,7 @@ body {
         margin-top: 40%
 
     }
+    
     .card .avatar {
         margin: 2%;
         width: 26%;
@@ -229,6 +328,10 @@ body {
 
     .card .avatar img {
         height: 50px;
+    }
+
+    #dateandtimediv{
+        margin-top:67%;
     }
 }
 
@@ -246,9 +349,19 @@ body {
     body {
         background: rgb(60, 55, 129);
     }
+   
 }
 
 /* Large devices (desktops)*/
 
 @media (max-width: 1199px) {}
+
+
+
+
+
+
+
+
+
 

@@ -56,7 +56,7 @@ class Information extends React.Component {
     render() {
         return (
 
-            <div className='wrapper' id="friendlyprops">
+            <div className='wrapper' id="rightcontainer">
                 <h4>Please Fill Your information</h4>
                 <br />
                 <div className='form-group'>

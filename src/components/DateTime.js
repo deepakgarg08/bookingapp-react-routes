@@ -22,18 +22,21 @@ function DateTime(props) {
     }
 
     return (
-        <div >
+        <div id="rightcontainer" className="dateandtimediv">
             <form onSubmit={handleSubmit}>
                 <span> Please select desired Date (MM/DD/YYYY) :</span>
-                <DatePicker className="datepickr"
+                <br/>  <br />
+                <DatePicker className="datepickr date-time"
                     onChange={onChangeDate}
                     value={date}
                 />
                 <br />
                 <br />
                 <span> Please select desired Time:</span>
+                <br />
+                <br />
 
-                <TimePicker className="timepickr"
+                <TimePicker className="timepickr date-time"
                     onChange={onChangeTime}
                     value={time}
                 />
