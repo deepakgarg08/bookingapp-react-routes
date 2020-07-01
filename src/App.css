@@ -229,9 +229,9 @@ body {
 
 #friendly1 {
     display: inline-block;
-    margin: 0px 0px 15px;
+    /* margin: 0px 0px 15px; */
     height: 76px;
-    width: 113%;
+    width: 92%;
     /* width: 690px; */
     /* padding: 0px; */
     background: #FFF;
@@ -288,7 +288,7 @@ body {
 
 #friendly4 {
     display: inline-block;
-    margin: 0px 0px 15px;
+    /* margin: 0px 0px 15px; */
     height: 76px;
     /* width: 690px; */
     /* padding: 0px; */
@@ -299,21 +299,18 @@ body {
     filter: drop-shadow(0px 0px 5px #555);
     border-radius: 2px;
     padding: 13px 20px;
-    margin-top: 49%;
-    width: 113%;
+    margin-top: 40%;
+    width: 92%;
     margin-left: 4%;
 
 }
 
-#outerdiv {
-    display: block;
-    height: 405px;
-    width: 690px;
-}
+
 
 #veryouter{
     background: #E4EBF3;
     min-height:600px;
+    height:600px;
 }
 
 #discountinput{
@@ -323,6 +320,7 @@ body {
     color: #477e51;
     width: 50%;
 }
+
 
 @media (max-width: 575px) {
     .nav-prop {
@@ -349,7 +347,9 @@ body {
     #informationdiv {
         margin-top: 57%;
     }
-    
+    #friendly4{
+        margin-top:71%;
+    }
     
 }
 
@@ -364,9 +364,9 @@ body {
 /* Medium devices (tablets) */
 
 @media (min-width: 768px) {
-    /* body {
+    body {
         background: blue
-    } */
+    }
     #dateandtimediv{
         margin-top: 59%;
     }
@@ -378,9 +378,9 @@ body {
 /* Large devices (desktops) */
 
 @media (min-width: 992px) {
-    /* body {
+    body {
         background: green;
-    } */
+    }
     
     #dateandtimediv{
         margin-top: 43%;
@@ -388,31 +388,36 @@ body {
     #informationdiv {
         margin-top: 41%;
     }
+    #friendly4{
+        margin-top:48%;
+    }
 }
 
 /* Extra large devices (large desktops) */
 
 @media (min-width: 1200px) {
-    /* body {
+    body {
         background: yellow;
-    } */
+    }
     #dateandtimediv{
         margin-top: 35%;
     }
     #informationdiv {
         margin-top: 33%;
     }
+    #friendly4{
+        margin-top:40%;
+    }
 }
 
 /* The given screen size or smaller */
 
-/* Extra small devices (portrait phones)*/
-
+/* for smaller and little big */
 @media (max-width: 767px) {
 
-    /* body {
+    body {
         background: rgb(80, 80, 64);
-    } */
+    }
     
     .leftcontainer {
         height: auto
@@ -445,6 +450,9 @@ body {
     #informationdiv {
         margin-top: 65%;
     }
+    /* #friendly4{
+        margin-top:87%;
+    } */
 }
 
 /* Small devices (landscape phones)*/
@@ -458,9 +466,22 @@ body {
         margin-left: -20%;
       
     }
-    /* body {
-        background: rgb(60, 55, 129);
-    } */
+    body {
+        background: rgb(240, 75, 9);
+    }
+
+    #friendly4{
+        margin-top:65%;
+    }
+   
+}
+
+@media (min-width: 576px) and (max-width: 766px) {
+ 
+
+    #friendly4{
+        margin-top:87%;
+    }
    
 }
 

@@ -10,12 +10,12 @@ class Confirmation extends React.Component {
     render() {
         return (
             <div id="veryouter">
-                <div id="outerdiv">
+                <div>
                 <br/>
                     <strong className="forconfirmlabelmargin">Please Check and Confirm your details</strong>
                     <br/>
                     <br/>
-                    <div id="friendlyprops">
+                    <div className="friendlyprops">
                         <FriendlyConfirmation flag={this.props.init} id="friendly1" />
                     </div>
                     <div>
@@ -26,7 +26,7 @@ class Confirmation extends React.Component {
                             <FriendlyConfirmation flag={this.props.init} id="friendly3" />
                         </div>
                     </div>
-                    <div id="friendlyprops">
+                    <div className="friendlypropss">
                         <FriendlyConfirmation flag={this.props.init} id="friendly4" />
                     </div>
 

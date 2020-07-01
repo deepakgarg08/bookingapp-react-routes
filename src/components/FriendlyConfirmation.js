@@ -46,11 +46,11 @@ function FriendlyConfirmation(props) {
             return (
                 <div id={props.id}>
 
-                    <div style={{ float: "right" }}>
+                    <div>
                         <span style={{ color: "#6C70DC", fontFamily: 'Poppins' }}>Location: <span> </span></span>
                         <span>  {props.flag.location} </span>
                     </div>
-                    <div style={{ float: "left" }}>
+                    <div>
                         <span style={{ color: "#6C70DC", fontFamily: 'Poppins' }}>Date & TIme: <span> </span></span>
                         <span>  {props.flag.dateAndTime.date} <span> -</span> {props.flag.dateAndTime.time} </span>
                     </div>
