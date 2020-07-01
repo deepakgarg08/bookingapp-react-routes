@@ -11,12 +11,12 @@ class Location extends React.Component {
             // { name: "Delhi", img: "image5.jpg", id: 5 },
             // { name: "Hisar", img: "image5.jpg", id: 6 }
 
-            { name: "Paderborn", img: "image1.jpg", id: 1 },
-            { name: "Bielefeld", img: "image2.jpg", id: 2 },
-            { name: "Frankfurt", img: "image3.jpg", id: 3 },
-            { name: "Delhi", img: "image4.jpg", id: 4 },
-            { name: "Rohtak", img: "image5.jpg", id: 5 },
-            { name: "Mumbai", img: "image5.jpg", id: 6 }
+            { name: "Paderborn", img: "image1.jpeg", id: 1 },
+            { name: "Bielefeld", img: "image2.jpeg", id: 2 },
+            { name: "Frankfurt", img: "image3.jpeg", id: 3 },
+            { name: "Delhi", img: "image4.jpeg", id: 4 },
+            { name: "Rohtak", img: "image5.jpeg", id: 5 },
+            { name: "Mumbai", img: "image6.jpeg", id: 6 }
             
             // { name: "Add new City", img: "image6.jpg", id: 6 }
 
