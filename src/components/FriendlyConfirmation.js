@@ -2,8 +2,9 @@ import React, { useState } from "react";
 import { connect } from "react-redux";
 import * as actions from '../redux/actionTypes'
 import axios from 'axios'
-let host = process.env.REACT_APP_HOST
-let server_port = process.env.REACT_APP_PORT || 4000
+
+// let host = process.env.REACT_APP_HOST || "http://localhost:"
+// let server_port = process.env.REACT_APP_PORT || 4000
 
 // axios.defaults.baseURL = host + server_port
 
@@ -23,7 +24,8 @@ function FriendlyConfirmation(props) {
 
         if (pageState.currentPageState === "confirmation") {
             axios
-                .post("/new/", {
+                // .post(host+server_port+"/new/", {
+                    .post("/new/", {
                     customerData: pageState
                 })
                 .then(function (response) {
