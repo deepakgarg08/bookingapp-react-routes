@@ -11,6 +11,10 @@ class Confirmation extends React.Component {
         return (
             <div id="veryouter">
                 <div id="outerdiv">
+                <br/>
+                    <strong className="forconfirmlabelmargin">Please Check and Confirm your details</strong>
+                    <br/>
+                    <br/>
                     <div id="friendlyprops">
                         <FriendlyConfirmation flag={this.props.init} id="friendly1" />
                     </div>

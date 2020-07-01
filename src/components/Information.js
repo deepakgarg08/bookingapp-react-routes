@@ -59,7 +59,7 @@ class Information extends React.Component {
             <div className='wrapper' id="rightcontainer">
                 <br />
 
-                <strong className="formargin">Please Fill Your information</strong>
+                <strong className="forinfolabelmargin">Please Fill Your information</strong>
                 <br/>
                 <div className='form-group'>
 

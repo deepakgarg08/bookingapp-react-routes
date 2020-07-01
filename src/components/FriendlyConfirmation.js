@@ -8,6 +8,7 @@ let server_port = process.env.REACT_APP_PORT || 4000
 // axios.defaults.baseURL = host + server_port
 
 function FriendlyConfirmation(props) {
+    console.log('props FriendlyConfirmation', props)
     const [discount, setDiscount] = useState('')
 
     let handleChange = (e) => {
