@@ -11,7 +11,7 @@ class BookingConfirmed extends React.Component {
             <div id="veryouter">
                 <div id="outerdiv">
                     <div id="friendlyprops">
-                        <div className="container">
+                        <div className="container text-center">
                             <h1 className="center">Confirmation</h1><br />
                             <h3 id="h3_">Thank you for your request!</h3><br />
                             <h4 id="h3_"> Your confirmation id is: {request_id} </h4><br />
