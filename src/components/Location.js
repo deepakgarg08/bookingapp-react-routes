@@ -17,9 +17,7 @@ class Location extends React.Component {
 
         return (
 
-            // <div>
-            //     <span><Friendly elementProperty={this.locationData.locationProps} /></span>
-            // </div>
+        
 
             <div id="rightcontainer">
                 <div className="container container-fluid">

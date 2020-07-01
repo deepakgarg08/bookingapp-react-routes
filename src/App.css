@@ -13,6 +13,11 @@
     margin-right: 1%;
     margin-top: 16%;
     margin-bottom: -5%;
+    /* height: 230px;
+    width: 230px; */
+
+    /* height: 87%;
+    width: 92%; */
 
     /* margin: 2%; */
 }
@@ -77,7 +82,9 @@ html {
 
 body {
     font-family: system-ui;
-    /* background-image: linear-gradient(#FDC830, yellow, #F37335); */
+    /* background-image: linear-gradient(#ffffff, rgb(172, 172, 134), #796155); */
+    /* background: #fff */
+
 }
 
 .nav-prop {
@@ -141,6 +148,15 @@ body {
     color: white;
 }
 
+#myclass {
+    color: white
+}
+
+.img-fluid{
+    max-width: 85%;
+}
+
+
 /* @media (max-width: 575px) {
     .nav-prop {
         background-color: #292d32;
@@ -161,7 +177,7 @@ body {
 
 @media (min-width: 768px) {
     body {
-        background: blue
+        /* background: blue */
     }
 }
 
@@ -169,7 +185,7 @@ body {
 
 @media (min-width: 992px) {
     body {
-        background: green;
+        /* background: green; */
     }
 }
 
@@ -177,7 +193,7 @@ body {
 
 @media (min-width: 1200px) {
     body {
-        background: yellow;
+        /* background: yellow; */
     }
 }
 
@@ -197,6 +213,8 @@ body {
     .nav-prop {
         width: 100%;
         background-color: #292d32;
+        margin-top: 40%
+
     }
     .card .avatar {
         margin: 2%;
@@ -206,6 +224,7 @@ body {
     }
     .nav-link {
         display: none;
+
     }
 
     .card .avatar img {
@@ -221,7 +240,8 @@ body {
 
 @media (min-width: 768px) and (max-width: 991px) {
     .nav-prop {
-        margin-left: -20%
+        margin-left: -20%;
+      
     }
     body {
         background: rgb(60, 55, 129);
@@ -232,10 +252,3 @@ body {
 
 @media (max-width: 1199px) {}
 
-#myclass {
-    color: white
-}
-
-.img-fluid{
-    max-width: 85%;
-}

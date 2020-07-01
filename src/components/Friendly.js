@@ -10,38 +10,10 @@ function Friendly(props) {
 
     const individualData = elementProperty.map((e) => {
         return (
-            // <span key={e.id}>
-            //     <button id="friendly" onClick={(event) => handleEvent(e.name, e.price)}>
-            //         <div id="cardprops">
-            //             <Avatar img={e.img} />
-            //             <UserName name={e.name} />
-            //             {e.price ? <span>{e.price} Rs   </span> : null}
-            //         </div>
-            //     </button>
-            // </span>
-
-
-            // <div className="col-md-4">
-            //     <div className="card" key={e.id}>
-            //         <button className="friendly" onClick={(event) => handleEvent(e.name, e.price)}>
-            //             <canvas width="250" height="70"></canvas>
-            //             <div className="avatar">
-            //                 {/* <img className="img img-fluid" src="https://source.unsplash.com/random/200x200" alt="" /> */}
-            //                 <img src={e.img} alt={e.name} className="img img-fluid" />
-            //             </div>
-            //             <div className="content">
-            //                 <p id="username">{props.name}
-            //                     <br />
-            //                     <small> {e.price ? <span>{e.price} Rs   </span> : null}</small>
-            //                 </p>
-            //             </div>
-            //         </button>
-            //     </div>
-            // </div>
-
+       
             <div className="col-md-4 no-gutters"  key={e.id}>
                 <div className="card">
-                    <button className="friendly" type="button">
+                    <button className="friendly" onClick={(event) => handleEvent(e.name, e.price)}>
                         <canvas className="header-bg" width="250" height="70"></canvas>
                         <div className="avatar">
                             <img className="img img-fluid" src={e.img} alt={e.name} />
@@ -92,20 +64,6 @@ function Friendly(props) {
     }
 
 
-}
-//avatar complex component
-function Avatar(props) {
-    return (
-        < img src={props.img} alt={props.name} height="400px" id="avatar" />
-    );
-}
-
-//username component
-
-function UserName(props) {
-    return (
-        <h1 id="username">{props.name}</h1>
-    );
 }
 
 //redux mappings

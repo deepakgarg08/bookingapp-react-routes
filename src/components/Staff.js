@@ -17,15 +17,12 @@ class Staff extends React.Component {
     }
 
     render() {
-        console.log('staff comp fired')
         return (
 
-            // <div>
-            //     <span><Friendly elementProperty={this.staffData.staffProps} /></span>
-            // </div>
+       
             <div id="rightcontainer">
-                <div class="container container-fluid">
-                    <div class="row">
+                <div className="container container-fluid">
+                    <div className="row no-gutters">
                         <Friendly elementProperty={this.staffData.staffProps} />
                     </div>
                 </div>
