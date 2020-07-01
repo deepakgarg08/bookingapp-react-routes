@@ -2,7 +2,6 @@
     overflow: hidden;
     position: relative;
     text-align: center;
-    margin-top: 18%;
     padding: 0px;
     background: #FFF;
     box-shadow: 0px 0px 5px #555;
@@ -10,8 +9,12 @@
     -webkit-filter: drop-shadow(0px 0px 5px #555);
     filter: drop-shadow(0px 0px 5px #555);
     border-radius: 10%;
-    margin-left: 1%;
+    margin-left: 5%;
     margin-right: 1%;
+    margin-top: 16%;
+    margin-bottom: -5%;
+
+    /* margin: 2%; */
 }
 
 .card .header-bg {
@@ -29,13 +32,21 @@
 }
 
 .card .avatar img {
-    width: 60%;
-    height: 60%;
+    width: 141px;
+    height: 141px;
+    /* width: 60%;
+    height: 60%; */
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     border-radius: 50%;
 }
 
+/* #avatar {
+    margin-top: 20px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%
+} */
 .friendly {
     padding: 0px;
     background: #FFF;
@@ -130,7 +141,7 @@ body {
     color: white;
 }
 
-@media (max-width: 575px) {
+/* @media (max-width: 575px) {
     .nav-prop {
         background-color: #292d32;
     }
@@ -141,14 +152,16 @@ body {
     }
     .card {
         margin-top: 5%;
+        margin-bottom: 0%;
     }
-}
+    
+} */
 
 /* Medium devices (tablets) */
 
 @media (min-width: 768px) {
     body {
-        /* background: blue */
+        background: blue
     }
 }
 
@@ -156,7 +169,7 @@ body {
 
 @media (min-width: 992px) {
     body {
-        /* background: green; */
+        background: green;
     }
 }
 
@@ -164,7 +177,7 @@ body {
 
 @media (min-width: 1200px) {
     body {
-        /* background: yellow; */
+        background: yellow;
     }
 }
 
@@ -173,6 +186,11 @@ body {
 /* Extra small devices (portrait phones)*/
 
 @media (max-width: 767px) {
+
+    body {
+        background: rgb(80, 80, 64);
+    }
+    
     .leftcontainer {
         height: auto
     }
@@ -189,6 +207,10 @@ body {
     .nav-link {
         display: none;
     }
+
+    .card .avatar img {
+        height: 50px;
+    }
 }
 
 /* Small devices (landscape phones)*/
@@ -201,6 +223,9 @@ body {
     .nav-prop {
         margin-left: -20%
     }
+    body {
+        background: rgb(60, 55, 129);
+    }
 }
 
 /* Large devices (desktops)*/
@@ -209,4 +234,8 @@ body {
 
 #myclass {
     color: white
+}
+
+.img-fluid{
+    max-width: 85%;
 }

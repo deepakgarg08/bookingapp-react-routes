@@ -52,8 +52,8 @@ function LeftContainerComponent(props) {
     console.log('currentState', currentState)
     return (
 
-        //     {/* <Link className="brand-logo" to="/" onClick={() => (props.changecurrentPageState('location'))}> Booking App</Link> */}
         // <div id="leftsidecontainer" >
+        //     {/* <Link className="brand-logo" to="/" onClick={() => (props.changecurrentPageState('location'))}> Booking App</Link> */}
 
         //     <div id="leftcontainerdata" className="leftcontdata">
 

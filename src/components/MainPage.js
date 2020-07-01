@@ -19,7 +19,7 @@ function MainPage() {
 
 
         <div className="d-flex mx-auto">
-    
+
             <div className="container container-fluid">
                 <h2 className="text-center my-3 text-warning">Welcome to Booking App</h2>
 
@@ -27,15 +27,16 @@ function MainPage() {
                     <div className="col-sm-3 col-md-3 col-lg-3 col-xl-3 text-left leftcontainer bg-black">
                         {/* leftcontainercomponent */}
                         <Navbar />
-                        <div className="col-sm-9 col-md-9 col-lg-9 col-xl-9 h-100">
+                    </div>
+                    <div className="col-sm-9 col-md-9 col-lg-9 col-xl-9 h-100">
                         {/* RIghtcontainercomponent */}
                         <RightContainerComponent />
-                        </div>
                     </div>
+
                 </div>
             </div>
         </div>
-        
+
 
     );
 }

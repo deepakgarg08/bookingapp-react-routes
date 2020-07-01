@@ -14,14 +14,20 @@ class Location extends React.Component {
         ]
     }
     render() {
-    console.log("REACT_APP_HOST",process.env.REACT_APP_HOST)
 
         return (
 
-            <div>
-                <span><Friendly elementProperty={this.locationData.locationProps} /></span>
-            </div>
+            // <div>
+            //     <span><Friendly elementProperty={this.locationData.locationProps} /></span>
+            // </div>
 
+            <div id="rightcontainer">
+                <div className="container container-fluid">
+                    <div className="row no-gutters">
+                    <Friendly elementProperty={this.locationData.locationProps} />
+                    </div>
+                </div>
+            </div>
 
         )
     }

@@ -18,8 +18,16 @@ class ServiceExtras extends React.Component {
     render() {
         return (
 
-            <div>
-                <span><Friendly elementProperty={this.serviceData.serviceProps} /></span>
+            // <div>
+            //     <span><Friendly elementProperty={this.serviceData.serviceProps} /></span>
+            // </div>
+
+            <div id="rightcontainer">
+                <div class="container container-fluid">
+                    <div class="row">
+                        <Friendly elementProperty={this.serviceData.serviceProps} />
+                    </div>
+                </div>
             </div>
 
         )
