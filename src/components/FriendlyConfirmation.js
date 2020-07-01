@@ -91,13 +91,14 @@ function FriendlyConfirmation(props) {
                         </div>
                             : null
                         }
+                        <br /><br /><br /><br /><br /><br /><br /><br />
                         <input type="text" name="discount" id="discountinput" placeholder="Enter Coupon Code" value={discount} onChange={e => setDiscount(e.target.value)} />
 
                         {/* <br/>
                         <span style={{ float: "left", color: "#5ac36e" }}> Discount</span>
                         <span style={{ float: "right", color: "#5ac36e" }}>{discountPrice} Rs </span> */}
                     </div>
-                    <br /><br /><br /><br /><br /><br /><br /><br /><br />
+                    <br /><br /><br /><br /><br /><br /><br /><br />
                     <div>
                         <span style={{ float: "left", color: "green" }}>Total Price </span>
                         <span style={{ float: "right", color: "green" }}> {totalPrice} Rs </span><br />
