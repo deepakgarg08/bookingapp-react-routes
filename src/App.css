@@ -489,6 +489,9 @@ body {
     color: green;
 }
 
+a:hover{
+    color: inherit;
+}
 
 /* Large devices (desktops)*/
 

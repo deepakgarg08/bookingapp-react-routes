@@ -16,14 +16,13 @@ function FriendlyConfirmation(props) {
         let totalamount = sessionStorage.getItem('totalprice')
         console.log('totalamount', totalamount)
         let pageState = props.init
-
-        let request_id = parseInt(Math.random() * 1000) + 1
+        //generate upto 5 digit no
+        let request_id = parseInt(Math.random() * 10000) + 1
         pageState.requestId = request_id
         pageState.totalamount = totalamount
 
         if (pageState.currentPageState === "confirmation") {
             axios
-            // .post("/new/", {
                 .post("/new/", {
                     customerData: pageState
                 })
