@@ -57,8 +57,10 @@ class Information extends React.Component {
         return (
 
             <div className='wrapper' id="rightcontainer">
-                <h4>Please Fill Your information</h4>
                 <br />
+
+                <strong className="formargin">Please Fill Your information</strong>
+                <br/>
                 <div className='form-group'>
 
 
@@ -84,15 +86,15 @@ class Information extends React.Component {
                             <input type='text' className="form-control" name='additionalInfo' onChange={this.handleChange} noValidate />
                         </div>
 
-                        <div className='submit' id = "informationdiv">
+                        <div className='submit' id="informationdiv">
                             <button id="confirmationbutton">Next</button>
                         </div>
-                        
+
                     </form>
 
                 </div>
 
-                
+
             </div>
         );
     }

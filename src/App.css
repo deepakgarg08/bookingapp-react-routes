@@ -184,7 +184,7 @@ body {
 
 
 #dateandtimediv{
-    /* display: inline-block; */
+    display: inline-block;
     margin: 0px 0px 15px;
     height: 76px;
     width: 100%;
@@ -199,7 +199,7 @@ body {
     margin-top: 35%;
     /* margin-top: calc(100% - 120px); */
     /* margin-top: 35%; */
-    float: right;
+    /* float: right; */
 }
 
 #confirmationbutton {
@@ -219,7 +219,7 @@ body {
     display: inline-block;
     margin: 0px 0px 15px;
     height: 76px;
-    width: 100%;
+    width: 95%;
     padding: 0px;
     background: #FFF;
     box-shadow: 0px 0px 5px #555;
@@ -229,6 +229,7 @@ body {
     border-radius: 2px;
     padding: 13px 20px;
     margin-top: 33%;
+    margin-left: 3%;
 }
 
 .date-time{
@@ -257,7 +258,16 @@ body {
     #dateandtimediv{
         margin-top: 59%;
     }
+
+    #informationdiv {
+        margin-top: 57%;
+    }
     
+    
+}
+
+.formargin{
+    margin-left: 2%;
 }
 
 /* Medium devices (tablets) */
@@ -268,6 +278,9 @@ body {
     }
     #dateandtimediv{
         margin-top: 59%;
+    }
+    #informationdiv {
+        margin-top: 57%;
     }
 }
 
@@ -281,7 +294,9 @@ body {
     #dateandtimediv{
         margin-top: 43%;
     }
-    
+    #informationdiv {
+        margin-top: 41%;
+    }
 }
 
 /* Extra large devices (large desktops) */
@@ -292,6 +307,9 @@ body {
     }
     #dateandtimediv{
         margin-top: 35%;
+    }
+    #informationdiv {
+        margin-top: 33%;
     }
 }
 
@@ -332,6 +350,9 @@ body {
 
     #dateandtimediv{
         margin-top:67%;
+    }
+    #informationdiv {
+        margin-top: 65%;
     }
 }
 
