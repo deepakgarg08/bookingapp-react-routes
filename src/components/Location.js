@@ -17,7 +17,7 @@ class Location extends React.Component {
             { name: "Delhi", img: "image4.jpeg", id: 4 },
             { name: "Rohtak", img: "image5.jpeg", id: 5 },
             { name: "Mumbai", img: "image6.jpeg", id: 6 }
-            
+
             // { name: "Add new City", img: "image6.jpg", id: 6 }
 
             //comment below code
@@ -37,7 +37,7 @@ class Location extends React.Component {
             <div id="rightcontainer">
                 <div className="container container-fluid">
                     <div className="row no-gutters">
-                    <Friendly elementProperty={this.locationData.locationProps} />
+                        <Friendly elementProperty={this.locationData.locationProps} />
                     </div>
                 </div>
             </div>

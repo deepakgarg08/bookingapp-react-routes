@@ -92,9 +92,9 @@ function FriendlyConfirmation(props) {
                         </div>
                             : null
                         }
-                        
-                        <input type="text" name="discount" id="discountinput" placeholder="Coupon" value={discount} onChange={e => setDiscount(e.target.value)} />
-
+                        <span className="text-center">
+                            <input type="text" name="discount" id="discountinput" placeholder="Coupon" value={discount} onChange={e => setDiscount(e.target.value)} />
+                        </span>
                         {/* <br/>
                         <span style={{ float: "left", color: "#5ac36e" }}> Discount</span>
                         <span style={{ float: "right", color: "#5ac36e" }}>{discountPrice} Rs </span> */}
@@ -110,7 +110,7 @@ function FriendlyConfirmation(props) {
         case 'friendly3': {
             return (
                 <div className="payment" >
-                    <div style={{ float: "left", textAlign: "left", padding:"13px 20px" }}>
+                    <div style={{ float: "left", textAlign: "left", padding: "13px 20px" }}>
                         {/*  eslint-disable-next-line */}
                         <a href="#">Credit Card</a><br />
                         {/*  eslint-disable-next-line */}
