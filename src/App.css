@@ -371,6 +371,9 @@ a:hover {
         margin-top: 80%;
 
     }
+    .nav-link {
+        display: block;
+    }
 }
 
 .forinfolabelmargin {
@@ -452,9 +455,7 @@ a:hover {
         height: 60%;
         margin-left: 36%;
     }
-    .nav-link {
-        display: none;
-    }
+    
     .card .avatar img {
         height: 50px;
     }
@@ -490,6 +491,9 @@ a:hover {
 @media (min-width: 576px) and (max-width: 766px) {
     #friendly4 {
         margin-top: 87%;
+    }
+    .nav-link {
+        display: none;
     }
 }
 
