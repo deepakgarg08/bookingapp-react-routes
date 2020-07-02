@@ -338,6 +338,7 @@ a:hover {
         background-color: #E4EBF3;
         min-height: 600px;
         margin-bottom: 25%;
+        height:1500px
     }
     .card {
         margin-top: 5%;
@@ -353,7 +354,22 @@ a:hover {
         margin-top: 57%;
     }
     #friendly4 {
-        margin-top: 71%;
+        margin-top: calc(600px - 76%);
+        font-size: x-small;
+    }
+    #friendly1 {
+        font-size: x-small;
+    }
+    #friendly2, #friendly3 {
+        font-size: x-small;
+        
+    }
+    .total_price_label{
+        /* margin-top: 70%; */
+    }
+    #discountinput{
+        margin-top: 80%;
+
     }
 }
 
