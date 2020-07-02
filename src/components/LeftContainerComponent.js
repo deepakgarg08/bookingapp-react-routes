@@ -98,7 +98,7 @@ function LeftContainerComponent(props) {
                             <span id="myclass" className={currentTab(currentState, 5)} > 5 </span>
                             <span className={currentHeading(currentState, 5)}>
                                 <NavLink to="/" className="nav-link" >
-                                    Date and Time </NavLink>
+                                    Day </NavLink>
                             </span>
                         </li>
                         <li className="nav-item nameproperty">

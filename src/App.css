@@ -338,7 +338,7 @@ a:hover {
         background-color: #E4EBF3;
         min-height: 600px;
         margin-bottom: 25%;
-        height:1500px
+        height:1085px
     }
     .card {
         margin-top: 5%;
@@ -354,7 +354,7 @@ a:hover {
         margin-top: 57%;
     }
     #friendly4 {
-        margin-top: calc(600px - 76%);
+        margin-top: calc(600px - 55%);
         font-size: x-small;
     }
     #friendly1 {
@@ -364,11 +364,11 @@ a:hover {
         font-size: x-small;
         
     }
-    .total_price_label{
-        /* margin-top: 70%; */
-    }
+    /* .total_price_label{
+        margin-top: 70%;
+    } */
     #discountinput{
-        margin-top: 80%;
+        margin-top: -20%;
 
     }
     .nav-link {
@@ -495,6 +495,13 @@ a:hover {
     .nav-link {
         display: none;
     }
+
+    /* #rightcontainer {
+        background-color: #E4EBF3;
+        min-height: 600px;
+        margin-bottom: 25%;
+        height:1500px
+    } */
 }
 
 /* Large devices (desktops)*/
