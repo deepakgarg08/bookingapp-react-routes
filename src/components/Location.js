@@ -30,7 +30,6 @@ class Location extends React.Component {
             // { name: "Mumbai",    img: "https://source.unsplash.com/random/203x200", id: 6 }
         ]
     }
-    // https://source.unsplash.com/random/200x200
     render() {
 
         return (

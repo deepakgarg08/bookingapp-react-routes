@@ -62,8 +62,6 @@ class Information extends React.Component {
                 <strong className="forinfolabelmargin">Please Fill Your information</strong>
                 <br/>
                 <div className='form-group'>
-
-
                     <form onSubmit={this.handleSubmit} noValidate>
                         <div className='form-group col-md-6' style={{ float: "left" }}>
                             <label htmlFor="fullName">Full Name*</label>
@@ -78,7 +76,7 @@ class Information extends React.Component {
 
                         <div className='form-group col-md-6' style={{ float: "left" }} >
                             <label htmlFor="mobile">mobile*</label>
-                            <input type='text' className="form-control" name='mobile' onChange={this.handleChange} noValidate />
+                            <input type='Number' className="form-control" name='mobile' onChange={this.handleChange} noValidate />
                         </div>
 
                         <div className='form-group col-md-6' style={{ float: "right" }} >

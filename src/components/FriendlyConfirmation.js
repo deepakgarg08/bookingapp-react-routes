@@ -74,7 +74,7 @@ function FriendlyConfirmation(props) {
                 totalPrice = totalPrice - discountPrice
 
             }else if(discount === 'discount10'){
-                discountPrice = 0.10 * totalPrice //5% discount
+                discountPrice = 0.10 * totalPrice //10% discount
                 totalPrice = totalPrice - discountPrice
             }
 

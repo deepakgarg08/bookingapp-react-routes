@@ -13,7 +13,6 @@
     margin-right: 1%;
     margin-top: 16%;
     margin-bottom: -5%;
-
 }
 
 .card .header-bg {
@@ -40,7 +39,6 @@
     border-radius: 50%;
 }
 
-
 .friendly {
     padding: 0px;
     background: #FFF;
@@ -55,7 +53,6 @@
     background-color: #E4EBF3;
     min-height: 600px;
     width: 100%;
-
 }
 
 .leftcontainer {
@@ -75,7 +72,6 @@ body {
     font-family: system-ui;
     /* background-image: linear-gradient(#ffffff, rgb(172, 172, 134), #796155); */
     /* background: #fff */
-
 }
 
 .nav-prop {
@@ -143,19 +139,19 @@ body {
     color: white
 }
 
-.img-fluid{
+.img-fluid {
     max-width: 85%;
 }
 
-
 /* date and time */
+
 .datepickr, .timepickr {
     background-color: greenyellow;
     text-align: left;
     width: 690px;
 }
 
-.dateandtimediv{
+.dateandtimediv {
     display: inline-block;
     margin: 0px 0px 15px;
     height: 76px;
@@ -171,8 +167,7 @@ body {
     margin-top: 0%;
 }
 
-
-#dateandtimediv{
+#dateandtimediv {
     display: inline-block;
     margin: 0px 0px 15px;
     height: 76px;
@@ -221,7 +216,7 @@ body {
     margin-left: 2%;
 }
 
-.date-time{
+.date-time {
     width: 49%;
 }
 
@@ -245,14 +240,12 @@ body {
 }
 
 #friendly2 {
-
     display: inline-block;
     margin: 8px;
     /* height: 309px; */
     height: 52%;
-
     /* width: 370px; */
-    width:46%;
+    width: 46%;
     padding: 0px;
     background: #FFF;
     box-shadow: 0px 0px 5px #555;
@@ -263,7 +256,6 @@ body {
     padding: 13px 20px;
     position: absolute;
     left: 3%;
-
 }
 
 #friendly3 {
@@ -271,9 +263,8 @@ body {
     margin: 8px;
     /* height: 309px; */
     height: 52%;
-
     /* width: 305px; */
-    width:40%;
+    width: 40%;
     padding: 0px;
     background: #FFF;
     box-shadow: 0px 0px 5px #555;
@@ -302,18 +293,15 @@ body {
     margin-top: 40%;
     width: 92%;
     margin-left: 4%;
-
 }
 
-
-
-#veryouter{
+#veryouter {
     background: #E4EBF3;
-    min-height:600px;
-    height:600px;
+    min-height: 600px;
+    height: 600px;
 }
 
-#discountinput{
+#discountinput {
     position: relative;
     bottom: 22%;
     /* right: 28%; */
@@ -321,6 +309,26 @@ body {
     width: 50%;
 }
 
+/* removing arrow from no field */
+
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+#h3_ {
+    color: green;
+}
+
+a:hover {
+    color: inherit;
+}
 
 @media (max-width: 575px) {
     .nav-prop {
@@ -335,39 +343,36 @@ body {
         margin-top: 5%;
         margin-bottom: 0%;
     }
-
     /* body {
         background: rgb(121, 110, 16)
     } */
-
-    #dateandtimediv{
+    #dateandtimediv {
         margin-top: 59%;
     }
-
     #informationdiv {
         margin-top: 57%;
     }
-    #friendly4{
-        margin-top:71%;
+    #friendly4 {
+        margin-top: 71%;
     }
-    
 }
 
-.forinfolabelmargin{
+.forinfolabelmargin {
     margin-left: 2%;
 }
 
-.forconfirmlabelmargin{
+.forconfirmlabelmargin {
     margin-left: 2%;
     margin-top: 50px;
 }
+
 /* Medium devices (tablets) */
 
 @media (min-width: 768px) {
     /* body {
         background: blue
     } */
-    #dateandtimediv{
+    #dateandtimediv {
         margin-top: 59%;
     }
     #informationdiv {
@@ -381,15 +386,14 @@ body {
     /* body {
         background: green;
     } */
-    
-    #dateandtimediv{
+    #dateandtimediv {
         margin-top: 43%;
     }
     #informationdiv {
         margin-top: 41%;
     }
-    #friendly4{
-        margin-top:48%;
+    #friendly4 {
+        margin-top: 48%;
     }
 }
 
@@ -399,26 +403,25 @@ body {
     /* body {
         background: yellow;
     } */
-    #dateandtimediv{
+    #dateandtimediv {
         margin-top: 35%;
     }
     #informationdiv {
         margin-top: 33%;
     }
-    #friendly4{
-        margin-top:40%;
+    #friendly4 {
+        margin-top: 40%;
     }
 }
 
 /* The given screen size or smaller */
 
 /* for smaller and little big */
-@media (max-width: 767px) {
 
+@media (max-width: 767px) {
     /* body {
         background: rgb(80, 80, 64);
     } */
-    
     .leftcontainer {
         height: auto
     }
@@ -426,9 +429,7 @@ body {
         width: 100%;
         background-color: #292d32;
         margin-top: 40%
-
     }
-    
     .card .avatar {
         margin: 2%;
         width: 26%;
@@ -437,15 +438,12 @@ body {
     }
     .nav-link {
         display: none;
-
     }
-
     .card .avatar img {
         height: 50px;
     }
-
-    #dateandtimediv{
-        margin-top:67%;
+    #dateandtimediv {
+        margin-top: 67%;
     }
     #informationdiv {
         margin-top: 65%;
@@ -464,45 +462,21 @@ body {
 @media (min-width: 768px) and (max-width: 991px) {
     .nav-prop {
         margin-left: -20%;
-      
     }
     /* body {
         background: rgb(240, 75, 9);
     } */
-
-    #friendly4{
-        margin-top:65%;
+    #friendly4 {
+        margin-top: 65%;
     }
-   
 }
 
 @media (min-width: 576px) and (max-width: 766px) {
- 
-
-    #friendly4{
-        margin-top:87%;
+    #friendly4 {
+        margin-top: 87%;
     }
-   
-}
-
-#h3_ {
-    color: green;
-}
-
-a:hover{
-    color: inherit;
 }
 
 /* Large devices (desktops)*/
 
 @media (max-width: 1199px) {}
-
-
-
-
-
-
-
-
-
-

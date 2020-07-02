@@ -17,11 +17,10 @@ function Friendly(props) {
                         <canvas className="header-bg" width="250" height="70"></canvas>
                         <div className="avatar">
                             <img className="img img-fluid" src={e.img} alt={e.name} />
-                            {/* <img className="img img-fluid" src="https://source.unsplash.com/random/200x200" alt={e.name} /> */}
+                          
                         </div><br />
                         <div className="content">
                             <p>{e.name} <br />
-                                {/* <small>&nbsp; </small> */}
                                 <small> {e.price ? <span>{e.price} Rs   </span> : "."}</small>
                             </p>
                         </div>
