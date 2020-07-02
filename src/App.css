@@ -309,6 +309,7 @@ body {
     width: 50%;
 }
 
+
 /* removing arrow from no field */
 
 input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
@@ -496,12 +497,6 @@ a:hover {
         display: none;
     }
 
-    /* #rightcontainer {
-        background-color: #E4EBF3;
-        min-height: 600px;
-        margin-bottom: 25%;
-        height:1500px
-    } */
 }
 
 /* Large devices (desktops)*/
