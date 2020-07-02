@@ -25,7 +25,7 @@ function FriendlyConfirmation(props) {
         if (pageState.currentPageState === "confirmation") {
             axios
                 // .post(host+server_port+"/new/", {
-                    .post("/new/", {
+                .post("/new/", {
                     customerData: pageState
                 })
                 .then(function (response) {
@@ -45,17 +45,17 @@ function FriendlyConfirmation(props) {
     switch (props.id) {
         case 'friendly1': {
             return (
-                <div id={props.id}>
-
-                    <div>
-                        <span style={{ color: "#6C70DC", fontFamily: 'Poppins' }}>Location: <span> </span></span>
-                        <span>  {props.flag.location} </span>
+                <div className="col-sm mt-4 col1-prop">
+                    <div className="mt-2">
+                        <div>
+                            <span style={{ color: "#6C70DC", fontFamily: 'Poppins' }}>Location: <span> </span></span>
+                            <span>  {props.flag.location} </span>
+                        </div>
+                        <div>
+                            <span style={{ color: "#6C70DC", fontFamily: 'Poppins' }}>Date & TIme: <span> </span></span>
+                            <span>  {props.flag.dateAndTime.date} <span> -</span> {props.flag.dateAndTime.time} </span>
+                        </div>
                     </div>
-                    <div>
-                        <span style={{ color: "#6C70DC", fontFamily: 'Poppins' }}>Date & TIme: <span> </span></span>
-                        <span>  {props.flag.dateAndTime.date} <span> -</span> {props.flag.dateAndTime.time} </span>
-                    </div>
-
                 </div>
             );
 
@@ -68,12 +68,12 @@ function FriendlyConfirmation(props) {
             let totalPrice = servicePrice + extraservicePrice + discountPrice
             // let discountdata = sessionStorage.getItem("mydiscountkey")
             console.log('discountdata in friendly2', discount)
-            if(discount === 'discount5'){
+            if (discount === 'discount5') {
 
                 discountPrice = 0.05 * totalPrice //5% discount
                 totalPrice = totalPrice - discountPrice
 
-            }else if(discount === 'discount10'){
+            } else if (discount === 'discount10') {
                 discountPrice = 0.10 * totalPrice //10% discount
                 totalPrice = totalPrice - discountPrice
             }
@@ -92,7 +92,7 @@ function FriendlyConfirmation(props) {
                         </div>
                             : null
                         }
-                        <br /><br /><br /><br /><br /><br /><br /><br />
+                        
                         <input type="text" name="discount" id="discountinput" placeholder="Coupon" value={discount} onChange={e => setDiscount(e.target.value)} />
 
                         {/* <br/>
@@ -109,8 +109,8 @@ function FriendlyConfirmation(props) {
         }
         case 'friendly3': {
             return (
-                <div id={props.id} >
-                    <div style={{ float: "left", textAlign: "left" }}>
+                <div className="payment" >
+                    <div style={{ float: "left", textAlign: "left", padding:"13px 20px" }}>
                         {/*  eslint-disable-next-line */}
                         <a href="#">Credit Card</a><br />
                         {/*  eslint-disable-next-line */}
@@ -127,9 +127,9 @@ function FriendlyConfirmation(props) {
         }
         case 'friendly4': {
             return (
-                <div id={props.id} >
+                <div>
                     <div>
-                        <button id="confirmationbutton" onClick={handleChange}>CONFIRM BOOKING</button>
+                        <button id="confirmabutton" onClick={handleChange}>CONFIRM BOOKING</button>
                     </div>
                 </div>
             )
