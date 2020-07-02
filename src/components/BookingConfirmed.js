@@ -8,7 +8,7 @@ class BookingConfirmed extends React.Component {
         let request_id = this.props.init.requestId
 
         return (
-            <div id="veryouter">
+            <div id="rightsidecontainer">
                 <div id="outerdiv">
                     <div id="friendlyprops">
                         <div className="container text-center">

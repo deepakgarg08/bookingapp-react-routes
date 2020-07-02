@@ -4,7 +4,7 @@ import LeftContainerComponent from './LeftContainerComponent'
 class Navbar extends React.Component {
     render() {
         return (
-            <LeftContainerComponent/>
+          <div className = "container container-fluid" > <LeftContainerComponent/> </div>
         )
     }
 }

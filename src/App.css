@@ -348,6 +348,12 @@ a:hover {
     margin: 3%;
 }
 
+#rightsidecontainer {
+    background-color: #E4EBF3;
+    height: 600px;
+}
+
+
 @media (max-width: 575px) {
     .nav-prop {
         background-color: #292d32;
@@ -371,22 +377,14 @@ a:hover {
     #informationdiv {
         margin-top: 57%;
     }
-    #friendly4 {
-        margin-top: calc(600px - 55%);
-        font-size: x-small;
-    }
+
     .col1-prop, .col2-prop , .col3-prop {
         font-size: x-small;
     }
-    /* #friendly2, #friendly3 {
-        font-size: x-small;
-    } */
-    /* .total_price_label{
-        margin-top: 70%;
-    } */
+
     #discountinput {
         margin-top: 50%;
-        margin-left: 11%;
+        margin-left: 15%;
     }
     .nav-link {
         display: block;
@@ -434,9 +432,10 @@ a:hover {
     #informationdiv {
         margin-top: 41%;
     }
-    #friendly4 {
-        margin-top: 48%;
-    }
+
+    /* #discountinput{
+        right: 0%;
+    } */
 }
 
 /* Extra large devices (large desktops) */
@@ -451,8 +450,9 @@ a:hover {
     #informationdiv {
         margin-top: 33%;
     }
-    #friendly4 {
-        margin-top: 40%;
+
+    #discountinput {
+        margin-left: 19%;
     }
 }
 
@@ -487,9 +487,11 @@ a:hover {
     #informationdiv {
         margin-top: 65%;
     }
-    /* #friendly4{
-        margin-top:87%;
-    } */
+
+  
+    .col1-prop, .col2-prop , .col3-prop {
+        font-size: x-small;
+    }
 }
 
 /* Small devices (landscape phones)*/
@@ -505,17 +507,22 @@ a:hover {
     /* body {
         background: rgb(240, 75, 9);
     } */
-    #friendly4 {
-        margin-top: 65%;
+
+    .col1-prop, .col2-prop , .col3-prop {
+        font-size: small;
+    }
+    #discountinput{
+        right: 13%;
     }
 }
 
 @media (min-width: 576px) and (max-width: 766px) {
-    #friendly4 {
-        margin-top: 87%;
-    }
+
     .nav-link {
         display: none;
+    }
+    #discountinput {
+        margin-left: 19%;
     }
 }
 
