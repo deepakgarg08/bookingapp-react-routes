@@ -20,10 +20,6 @@ class ServiceExtras extends React.Component {
             // { name: "Concealed",    img: "https://source.unsplash.com/random/198x200", price: "400", id: 6 }
             
             
-            
-            
-            
-            
         ]
     }
 
