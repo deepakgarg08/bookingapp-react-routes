@@ -56,7 +56,7 @@ class Information extends React.Component {
     render() {
         return (
 
-            <div className='wrapper' id="rightcontainer">
+            <div className='wrapper container' id="rightcontainer">
                 <br />
 
                 <strong className="forinfolabelmargin">Please Fill Your information</strong>
