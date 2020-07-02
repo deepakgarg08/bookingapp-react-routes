@@ -364,9 +364,9 @@ body {
 /* Medium devices (tablets) */
 
 @media (min-width: 768px) {
-    body {
+    /* body {
         background: blue
-    }
+    } */
     #dateandtimediv{
         margin-top: 59%;
     }
@@ -378,9 +378,9 @@ body {
 /* Large devices (desktops) */
 
 @media (min-width: 992px) {
-    body {
+    /* body {
         background: green;
-    }
+    } */
     
     #dateandtimediv{
         margin-top: 43%;
@@ -396,9 +396,9 @@ body {
 /* Extra large devices (large desktops) */
 
 @media (min-width: 1200px) {
-    body {
+    /* body {
         background: yellow;
-    }
+    } */
     #dateandtimediv{
         margin-top: 35%;
     }
@@ -415,9 +415,9 @@ body {
 /* for smaller and little big */
 @media (max-width: 767px) {
 
-    body {
+    /* body {
         background: rgb(80, 80, 64);
-    }
+    } */
     
     .leftcontainer {
         height: auto
@@ -466,9 +466,9 @@ body {
         margin-left: -20%;
       
     }
-    body {
+    /* body {
         background: rgb(240, 75, 9);
-    }
+    } */
 
     #friendly4{
         margin-top:65%;
